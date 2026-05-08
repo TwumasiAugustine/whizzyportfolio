@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { FaExternalLinkAlt, FaEye } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
+import { ImageLightbox } from '../components/ImageLightbox'
 import type { SiteContent } from '../types/site'
 
 type PortfolioSectionProps = {
@@ -23,6 +24,7 @@ const cardVariants = {
 
 export function PortfolioSection({ content }: PortfolioSectionProps) {
   const [selectedSkill, setSelectedSkill] = useState('All')
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
 
   const skillFilters = useMemo(() => {
     const tags = new Set<string>()
@@ -87,8 +89,27 @@ export function PortfolioSection({ content }: PortfolioSectionProps) {
               exit="exit"
               layout
             >
-            <div className="project-media" aria-hidden="true">
-              <span className="media-arrow">↗</span>
+            <div
+              className="project-media"
+              onClick={() => project.image && setLightboxImage({ src: project.image, alt: project.title })}
+              role={project.image ? 'button' : undefined}
+              tabIndex={project.image ? 0 : undefined}
+              onKeyDown={(e) => {
+                if (project.image && (e.key === 'Enter' || e.key === ' ')) {
+                  e.preventDefault()
+                  setLightboxImage({ src: project.image, alt: project.title })
+                }
+              }}
+              aria-label={project.image ? `View ${project.title} image` : undefined}
+              style={{ cursor: project.image ? 'pointer' : 'default' }}
+            >
+              {project.image ? (
+                <img src={project.image} alt={project.title} loading="lazy" />
+              ) : (
+                <div className="project-media-placeholder">
+                  <span className="media-arrow">↗</span>
+                </div>
+              )}
             </div>
             <p className="project-category">{project.category}</p>
             <h3>{project.title}</h3>
@@ -124,6 +145,12 @@ export function PortfolioSection({ content }: PortfolioSectionProps) {
       {visibleProjects.length === 0 ? (
         <p className="empty-state">No projects match this skill yet. Add case studies for this capability.</p>
       ) : null}
+      <ImageLightbox
+        image={lightboxImage?.src || ''}
+        alt={lightboxImage?.alt || ''}
+        isOpen={!!lightboxImage}
+        onClose={() => setLightboxImage(null)}
+      />
     </section>
   )
 }

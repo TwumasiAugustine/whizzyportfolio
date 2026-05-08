@@ -66,7 +66,6 @@ export function FooterSection({ content }: FooterSectionProps) {
         <p>
           © {currentYear} {content.personName}. Made with <FaHeart className="footer-heart" /> for growth-focused clients.
         </p>
-        <small>Frontend-only portfolio. Integrations use external services.</small>
       </div>
     </footer>
   )

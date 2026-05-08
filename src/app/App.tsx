@@ -65,7 +65,7 @@ function App() {
             </a>
           ))}
         </nav>
-        <a className="btn btn-secondary nav-cta" href="#contact">
+        <a className="btn btn-primary nav-cta" href="#contact">
           Hire Me
         </a>
       </header>

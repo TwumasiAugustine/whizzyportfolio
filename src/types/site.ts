@@ -11,6 +11,7 @@ export type Project = {
   challenge: string
   result: string
   tags: string[]
+  image?: string
   url?: string
   demoUrl?: string
 }
@@ -30,6 +31,7 @@ export type FaqItem = {
 export type SiteContent = {
   personName: string
   brandName: string
+  profileImage: string
   profileLine: string
   positioning: string
   heroHeadline: string

@@ -8,6 +8,7 @@ import {
   FaBullseye,
   FaLaptopCode,
   FaEnvelope,
+  FaPalette,
 } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 import type { SiteContent } from '../types/site'
@@ -25,6 +26,7 @@ const skillIconMap: Record<string, React.ComponentType<{ className?: string }>> 
   CRO: FaBullseye,
   'Landing Pages': FaLaptopCode,
   'Email Marketing': FaEnvelope,
+  'Graphic Design': FaPalette,
 }
 
 const containerVariants = {

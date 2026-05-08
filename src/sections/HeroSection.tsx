@@ -1,6 +1,5 @@
 import { motion } from 'motion/react'
 import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub } from 'react-icons/fa6'
-import profileImage from '../assets/hero.png'
 import { InfiniteCarousel } from '../components/InfiniteCarousel'
 import type { SiteContent } from '../types/site'
 
@@ -26,7 +25,7 @@ export function HeroSection({ content }: HeroSectionProps) {
           transition={{ duration: 0.65 }}
         >
           <div className="avatar-ring">
-            <img src={profileImage} alt={`${content.personName} profile`} />
+            <img src={content.profileImage} alt={`${content.personName} profile`} />
           </div>
           <p className="profile-name">{content.personName}</p>
           <p>{content.profileLine}</p>
@@ -34,7 +33,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             {content.socialLinks.map((item) => {
               const IconComponent = iconMap[item.icon]
               return (
-                <a key={item.label} href={item.href} aria-label={item.label} className="social-link">
+                <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label} className="social-link">
                   {IconComponent && <IconComponent className="social-icon" />}
                 </a>
               )
