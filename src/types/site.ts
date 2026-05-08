@@ -21,6 +21,7 @@ export type Testimonial = {
   author: string
   role: string
   company?: string
+  metric?: string
 }
 
 export type FaqItem = {
@@ -48,6 +49,7 @@ export type SiteContent = {
   insights: {
     title: string
     summary: string
+    deliverables?: string[]
   }
   socialLinks: Array<{
     label: string

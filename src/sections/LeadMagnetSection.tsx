@@ -36,7 +36,7 @@ export function LeadMagnetSection({ content, onOpenPopup }: LeadMagnetSectionPro
           whileTap={{ scale: 0.98 }}
           type="button"
         >
-          Request Your Free Audit <FaArrowRight className="btn-icon" />
+          Find My Visibility Gaps (Free) <FaArrowRight className="btn-icon" />
         </motion.button>
       </motion.div>
     </section>

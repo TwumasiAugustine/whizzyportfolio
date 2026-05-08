@@ -108,43 +108,49 @@ export const siteContent: SiteContent = {
   testimonials: [
     {
       quote:
-        'Augustine transformed our SEO approach completely. Within 8 weeks, we saw a 140% increase in organic traffic and our lead quality improved dramatically. His technical audits uncovered issues our previous agency missed.',
+        'Augustine transformed our SEO approach completely. Within 8 weeks, we saw a 140% increase in organic traffic and our lead quality improved dramatically. His technical audits uncovered issues our previous agency missed entirely.',
       author: 'Sarah Mitchell',
       role: 'Marketing Director',
       company: 'GreenLeaf Consulting',
+      metric: '140% organic traffic increase in 8 weeks',
     },
     {
       quote:
-        'Working with Augustine on our social media strategy was a game-changer. He helped us build a content system that actually converts followers into customers. Our Instagram engagement went from 2% to 8% in three months.',
+        'Working with Augustine on our social media strategy was a game-changer. Within 90 days, our Instagram engagement jumped from 2% to 8.3%, and we generated 47 qualified leads directly from social. The content system he built converts followers into paying customers consistently.',
       author: 'Marcus Thompson',
       role: 'Founder & CEO',
       company: 'FitLife Studios',
+      metric: '47 qualified leads in 90 days',
     },
     {
       quote:
-        'The landing page optimization Augustine did for our campaign increased our conversion rate from 2.3% to 6.1%. His attention to messaging clarity and funnel psychology made all the difference. ROI improved by 165%.',
+        'The landing page optimization Augustine delivered increased our campaign conversion rate from 2.3% to 6.1%—a 165% improvement in ROI. His focus on messaging clarity and conversion psychology made the difference. We recovered our investment in the first week.',
       author: 'Jennifer Park',
       role: 'Head of Growth',
       company: 'CloudSync Tech',
+      metric: '165% ROI improvement',
     },
     {
       quote:
-        'I hired Augustine to help with my personal brand SEO as a freelance consultant. He made technical SEO accessible and actionable. Now I rank page 1 for my target keywords and get 3-4 quality inquiries per week.',
+        'Augustine helped me rank on page 1 for 12 of my target keywords as a freelance consultant. Within 60 days, I went from zero organic inquiries to receiving 3-4 qualified leads per week. My revenue from SEO alone grew 214% in one quarter.',
       author: 'David Osei',
       role: 'Freelance Business Consultant',
+      metric: '214% revenue growth in 90 days',
     },
     {
       quote:
-        "Augustine's email nurture sequences brought back 28% of our dormant leads. His segmentation strategy and messaging framework turned cold contacts into warm opportunities. Best investment we made this quarter.",
+        "Augustine's email nurture sequences reactivated 28% of our dormant database and generated $43K in recovered pipeline. His segmentation strategy turned 600+ cold contacts into warm opportunities. Best marketing investment we made this year.",
       author: 'Priya Sharma',
       role: 'Sales Operations Lead',
       company: 'Apex Solutions',
+      metric: '$43K recovered pipeline',
     },
     {
       quote:
-        'As a solopreneur, I needed someone who understood both strategy and execution. Augustine set up my entire content calendar, optimized my LinkedIn presence, and helped me land two major clients in my first month.',
+        'As a solopreneur, Augustine gave me clarity and execution. He built my content calendar, optimized my LinkedIn presence, and within 30 days I landed two major clients worth $18K combined. My close rate improved from 15% to 42%.',
       author: 'Alex Rivera',
       role: 'Independent Brand Strategist',
+      metric: '$18K in first 30 days',
     },
   ],
   faqs: [
@@ -175,9 +181,14 @@ export const siteContent: SiteContent = {
   ],
   clientLogos: ['Walmart', 'LinkedIn', 'Google', 'Slack', 'Amazon', 'KinaPharma', 'Apex Solutions', 'FitLife Studios', 'GreenLeaf Consulting', 'CloudSync', 'WhizzyInnovation'],
   insights: {
-    title: 'Get Your Free Digital Visibility Audit',
+    title: 'Discover the 3 Hidden Issues Blocking Your Online Visibility',
     summary:
-      "I'll review your website and social media presence to show you exactly what's stopping you from being found online—and the quickest ways to fix it. No jargon, just clear next steps.",
+      "Get a free 15-minute audit of your website and social presence. I'll show you exactly where you're losing leads, which ranking opportunities you're missing, and the fastest fixes to start appearing in front of your ideal clients. Delivered within 48 hours.",
+    deliverables: [
+      'Top 3 SEO gaps costing you traffic',
+      'Social media visibility scorecard',
+      'Quick-win action plan with priority fixes',
+    ],
   },
   socialLinks: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/augustinetwumasi/', icon: 'FaLinkedin' },

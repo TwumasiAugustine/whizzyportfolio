@@ -33,11 +33,35 @@ function App() {
       return
     }
 
-    const timer = window.setTimeout(() => {
-      setShowInsightsPopup(true)
-    }, 15000)
+    let triggered = false
 
-    return () => window.clearTimeout(timer)
+    // Trigger on 50% scroll depth or after 30 seconds (whichever comes first)
+    const handleScroll = () => {
+      if (triggered) return
+      
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+      
+      if (scrollPercent >= 50) {
+        triggered = true
+        setShowInsightsPopup(true)
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }
+
+    const timer = window.setTimeout(() => {
+      if (!triggered) {
+        triggered = true
+        setShowInsightsPopup(true)
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }, 30000)
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.clearTimeout(timer)
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
   const closeInsightsPopup = () => {

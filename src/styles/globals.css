@@ -1050,6 +1050,41 @@ textarea:focus-visible,
   margin-top: 0.45rem;
 }
 
+.insights-summary {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.insights-deliverables {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: rgba(241, 111, 67, 0.08);
+  border-left: 3px solid var(--accent-2);
+  border-radius: 0.5rem;
+  list-style: none;
+}
+
+.insights-deliverables li {
+  padding: 0.5rem 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.insights-deliverables li::before {
+  content: none;
+}
+
+.insights-trust-line {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .insights-modal-close {
   position: absolute;
   right: 0.6rem;
