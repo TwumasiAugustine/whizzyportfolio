@@ -75,7 +75,7 @@ function App() {
         <AboutSection />
         <ServicesSection content={siteContent} />
         <Suspense fallback={<div className="section-shell" style={{ minHeight: '400px' }} />}>
-          <SkillsSection content={siteContent} />
+          <SkillsSection />
           <PortfolioSection content={siteContent} />
           <ProcessSection />
           <TestimonialsSection content={siteContent} />
