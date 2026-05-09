@@ -35,7 +35,7 @@ function App() {
 
     let triggered = false
 
-    // Trigger on 50% scroll depth or after 30 seconds (whichever comes first)
+    // Trigger on 50% scroll depth 
     const handleScroll = () => {
       if (triggered) return
       
@@ -48,18 +48,9 @@ function App() {
       }
     }
 
-    const timer = window.setTimeout(() => {
-      if (!triggered) {
-        triggered = true
-        setShowInsightsPopup(true)
-        window.removeEventListener('scroll', handleScroll)
-      }
-    }, 30000)
-
     window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.clearTimeout(timer)
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -89,7 +80,7 @@ function App() {
             </a>
           ))}
         </nav>
-        <a className="btn btn-primary nav-cta" href="#contact">
+        <a className="hidden  btn btn-primary" href="#contact">
           Hire Me
         </a>
       </header>
