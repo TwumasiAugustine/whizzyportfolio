@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { FaSearch, FaChartLine, FaBullseye } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
+import { TrustBadges } from '../components/TrustBadges'
 import type { SiteContent } from '../types/site'
 
 type ServicesSectionProps = {
@@ -68,6 +69,8 @@ export function ServicesSection({ content }: ServicesSectionProps) {
           )
         })}
       </motion.div>
+      
+      <TrustBadges />
     </section>
   )
 }

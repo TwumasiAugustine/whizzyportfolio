@@ -71,11 +71,13 @@ export function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) 
                 <FaQuoteLeft className="quote-icon" />
                 <p className="testimonial-quote">"{testimonials[currentIndex].quote}"</p>
                 <footer className="testimonial-footer">
-                  <strong>{testimonials[currentIndex].author}</strong>
-                  <span>{testimonials[currentIndex].role}</span>
-                  {testimonials[currentIndex].company && (
-                    <span className="testimonial-company">{testimonials[currentIndex].company}</span>
-                  )}
+                  <cite>
+                    <strong>{testimonials[currentIndex].author}</strong>
+                    <span>{testimonials[currentIndex].role}</span>
+                    {testimonials[currentIndex].company && (
+                      <span className="testimonial-company">{testimonials[currentIndex].company}</span>
+                    )}
+                  </cite>
                 </footer>
               </blockquote>
             </motion.div>

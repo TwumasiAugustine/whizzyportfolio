@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
-import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub } from 'react-icons/fa6'
+import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub, FaDownload } from 'react-icons/fa6'
 import { InfiniteCarousel } from '../components/InfiniteCarousel'
+import { trackEvent } from '../components/GoogleAnalytics'
 import type { SiteContent } from '../types/site'
 
 type HeroSectionProps = {
@@ -15,6 +16,13 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 }
 
 export function HeroSection({ content }: HeroSectionProps) {
+  const handleResumeDownload = () => {
+    trackEvent('resume_download', {
+      event_category: 'engagement',
+      event_label: 'hero_section',
+    })
+  }
+
   return (
     <section id="home" className="hero-section section-shell" aria-labelledby="hero-title">
       <div className="hero-bento">
@@ -25,7 +33,14 @@ export function HeroSection({ content }: HeroSectionProps) {
           transition={{ duration: 0.65 }}
         >
           <div className="avatar-ring">
-            <img src={content.profileImage} alt={`${content.personName} profile`} />
+            <img 
+              src={content.profileImage} 
+              alt={`${content.personName} profile`}
+              loading="eager"
+              fetchPriority="high"
+              width="200"
+              height="200"
+            />
           </div>
           <p className="profile-name">{content.personName}</p>
           <p>{content.profileLine}</p>
@@ -39,6 +54,16 @@ export function HeroSection({ content }: HeroSectionProps) {
               )
             })}
           </div>
+          <a
+            href="/resume.pdf"
+            download="Augustine_Twumasi_Resume.pdf"
+            className="btn btn-primary btn-sm hero-resume-btn"
+            onClick={handleResumeDownload}
+            aria-label="Download resume as PDF"
+          >
+            <FaDownload style={{ marginRight: '0.4rem' }} />
+            Get My Resume
+          </a>
         </motion.article>
 
         <div className="hero-right-column">

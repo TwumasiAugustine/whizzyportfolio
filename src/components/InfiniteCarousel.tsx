@@ -1,7 +1,12 @@
 import { motion } from 'motion/react'
 
+type Logo = {
+  name: string
+  imageUrl: string
+}
+
 type InfiniteCarouselProps = {
-  items: string[]
+  items: Logo[]
   duration?: number
 }
 
@@ -23,9 +28,16 @@ export function InfiniteCarousel({ items, duration = 20 }: InfiniteCarouselProps
         }}
       >
         {duplicatedItems.map((item, index) => (
-          <span key={`${item}-${index}`} className="carousel-item">
-            {item}
-          </span>
+          <div key={`${item.name}-${index}`} className="carousel-item">
+            <img 
+              src={item.imageUrl} 
+              alt={`${item.name} logo`}
+              className="carousel-logo"
+              loading="lazy"
+              width="80"
+              height="40"
+            />
+          </div>
         ))}
       </motion.div>
     </div>

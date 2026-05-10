@@ -1,5 +1,8 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { ErrorBoundary } from '../components/ErrorBoundary'
+import { GoogleAnalytics } from '../components/GoogleAnalytics'
 import { InsightsPopup } from '../components/InsightsPopup'
+import { MobileMenu } from '../components/MobileMenu'
 import { ScrollProgress } from '../components/ScrollProgress'
 import { siteContent } from '../data/site-content'
 import { AboutSection } from '../sections/AboutSection'
@@ -11,6 +14,9 @@ const SkillsSection = lazy(() => import('../sections/SkillsSection').then(m => (
 const PortfolioSection = lazy(() => import('../sections/PortfolioSection').then(m => ({ default: m.PortfolioSection })))
 const ProcessSection = lazy(() => import('../sections/ProcessSection').then(m => ({ default: m.ProcessSection })))
 const TestimonialsSection = lazy(() => import('../sections/TestimonialsSection').then(m => ({ default: m.TestimonialsSection })))
+const ProofSection = lazy(() => import('../sections/ProofSection').then(m => ({ default: m.ProofSection })))
+const BlogSection = lazy(() => import('../sections/BlogSection').then(m => ({ default: m.BlogSection })))
+const CertificationsSection = lazy(() => import('../sections/CertificationsSection').then(m => ({ default: m.CertificationsSection })))
 const LeadMagnetSection = lazy(() => import('../sections/LeadMagnetSection').then(m => ({ default: m.LeadMagnetSection })))
 const FaqSection = lazy(() => import('../sections/FaqSection').then(m => ({ default: m.FaqSection })))
 const ContactSection = lazy(() => import('../sections/ContactSection').then(m => ({ default: m.ContactSection })))
@@ -21,12 +27,15 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Works', href: '#projects' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ]
 
 function App() {
   const [showInsightsPopup, setShowInsightsPopup] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  // Scroll-based lead magnet trigger only (removed time-based trigger)
   useEffect(() => {
     const seen = sessionStorage.getItem('insights-popup-dismissed')
     if (seen === '1') {
@@ -35,7 +44,7 @@ function App() {
 
     let triggered = false
 
-    // Trigger on 50% scroll depth 
+    // Trigger on 50% scroll depth
     const handleScroll = () => {
       if (triggered) return
       
@@ -66,8 +75,15 @@ function App() {
 
   return (
     <>
+      <GoogleAnalytics />
       <ScrollProgress />
       <InsightsPopup content={siteContent} open={showInsightsPopup} onClose={closeInsightsPopup} />
+      <MobileMenu
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        navItems={navItems}
+        brandName={siteContent.brandName}
+      />
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -80,7 +96,30 @@ function App() {
             </a>
           ))}
         </nav>
-        <a className="hidden  btn btn-primary" href="#contact">
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          onClick={() => setMobileMenuOpen(true)}
+          aria-label="Open menu"
+          aria-expanded={mobileMenuOpen}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <a className="hidden desktop-cta btn btn-primary" href="#contact">
           Hire Me
         </a>
       </header>
@@ -89,20 +128,27 @@ function App() {
         <HeroSection content={siteContent} />
         <AboutSection />
         <ServicesSection content={siteContent} />
-        <Suspense fallback={<div className="section-shell" style={{ minHeight: '400px' }} />}>
-          <SkillsSection />
-          <PortfolioSection content={siteContent} />
-          <ProcessSection />
-          <TestimonialsSection content={siteContent} />
-          <FaqSection content={siteContent} />
-          <LeadMagnetSection content={siteContent} onOpenPopup={openInsightsPopup} />
-          <ContactSection content={siteContent} />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="section-shell" style={{ minHeight: '400px' }} />}>
+            <SkillsSection />
+            <PortfolioSection content={siteContent} />
+            <TestimonialsSection content={siteContent} />
+            <ProofSection content={siteContent} />
+            <ProcessSection />
+            <CertificationsSection content={siteContent} />
+            <BlogSection content={siteContent} />
+            <FaqSection content={siteContent} />
+            <LeadMagnetSection content={siteContent} onOpenPopup={openInsightsPopup} />
+            <ContactSection content={siteContent} />
+          </Suspense>
+        </ErrorBoundary>
       </main>
 
-      <Suspense fallback={<div style={{ minHeight: '300px' }} />}>
-        <FooterSection content={siteContent} />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<div style={{ minHeight: '300px' }} />}>
+          <FooterSection content={siteContent} />
+        </Suspense>
+      </ErrorBoundary>
     </>
   )
 }

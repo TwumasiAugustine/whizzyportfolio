@@ -1,0 +1,16 @@
+{
+  "name": "Codiq - Augustine Twumasi Portfolio",
+  "short_name": "Codiq",
+  "description": "Full Stack Web Developer and Digital Marketing Strategist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#f16f43",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -19,20 +19,20 @@ export function FooterSection({ content }: FooterSectionProps) {
     <footer className="site-footer" aria-label="Footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <h3 className="footer-logo">{content.brandName}</h3>
+          <p className="footer-logo">{content.brandName}</p>
           <p className="footer-tagline">Digital marketing that converts.</p>
         </div>
 
         <nav className="footer-nav" aria-label="Footer navigation">
           <div className="footer-nav-group">
-            <h4>Quick Links</h4>
+            <p className="footer-nav-heading">Quick Links</p>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
           </div>
           <div className="footer-nav-group">
-            <h4>Connect</h4>
+            <p className="footer-nav-heading">Connect</p>
             <a href="#contact">Contact</a>
             <a href="#insights">Insights</a>
             <a href="#faq">FAQ</a>
@@ -41,7 +41,7 @@ export function FooterSection({ content }: FooterSectionProps) {
         </nav>
 
         <div className="footer-social">
-          <h4>Follow</h4>
+          <p className="footer-social-heading">Follow</p>
           <div className="footer-social-links">
             {content.socialLinks.map((item) => {
               const IconComponent = iconMap[item.icon]
