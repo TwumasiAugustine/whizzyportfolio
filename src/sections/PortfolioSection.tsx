@@ -53,8 +53,8 @@ export function PortfolioSection({ content }: PortfolioSectionProps) {
     <section id="projects" className="section-shell" aria-labelledby="projects-title">
       <SectionTitle
         eyebrow="Portfolio"
-        title="Works and Projects"
-        blurb="A focused portfolio of SEO, social, and conversion campaigns built for measurable business impact."
+        title="Development & Marketing Projects"
+        blurb="Web applications, SaaS platforms, and marketing campaigns built with technical excellence and growth focus."
       />
       <motion.div
         className="project-filters"

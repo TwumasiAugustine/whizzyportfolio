@@ -2,7 +2,9 @@ import { useState, useRef } from 'react'
 import type { FormEvent } from 'react'
 import { motion } from 'motion/react'
 import emailjs from '@emailjs/browser'
+import { FaCalendarAlt, FaEnvelope } from 'react-icons/fa'
 import { trackFormSubmit } from '../components/GoogleAnalytics'
+import { CalendlyPopupButton } from '../components/CalendlyWidget'
 import type { SiteContent } from '../types/site'
 
 type ContactSectionProps = {
@@ -79,10 +81,18 @@ export function ContactSection({ content }: ContactSectionProps) {
           Send a direct message for collaborations, speaking, partnerships, or general questions.
         </p>
         <div className="contact-links">
-          <a className="btn btn-secondary" href={content.contact.calendlyUrl} target="_blank" rel="noopener noreferrer">
-            Book a Call
-          </a>
+          <CalendlyPopupButton
+            url={content.contact.calendlyUrl}
+            text={
+              <>
+                <FaCalendarAlt style={{ marginRight: '0.5rem' }} />
+                Book a Call
+              </>
+            }
+            className="btn btn-primary"
+          />
           <a className="btn btn-secondary" href={`mailto:${content.contact.email}`}>
+            <FaEnvelope style={{ marginRight: '0.5rem' }} />
             Email Directly
           </a>
         </div>

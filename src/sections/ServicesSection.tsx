@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { FaSearch, FaChartLine, FaBullseye } from 'react-icons/fa'
+import { FaSearch, FaChartLine, FaBullseye, FaCode, FaRocket, FaChartBar } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 import { TrustBadges } from '../components/TrustBadges'
 import type { SiteContent } from '../types/site'
@@ -12,6 +12,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   FaSearch,
   FaChartLine,
   FaBullseye,
+  FaCode,
+  FaRocket,
+  FaChartBar,
 }
 
 const containerVariants = {
@@ -39,8 +42,8 @@ export function ServicesSection({ content }: ServicesSectionProps) {
     <section id="services" className="section-shell" aria-labelledby="services-title">
       <SectionTitle
         eyebrow="Services"
-        title="Digital Marketing Services Built For Revenue Outcomes"
-        blurb="Every service is designed to improve acquisition efficiency, conversion quality, and customer journey clarity."
+        title="Full-Stack Development & Growth Marketing Solutions"
+        blurb="From building high-performance web applications to scaling them with strategic marketing—I deliver technical excellence and growth results."
       />
       <motion.div
         className="service-grid"

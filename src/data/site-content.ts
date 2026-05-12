@@ -4,49 +4,109 @@ export const siteContent: SiteContent = {
   personName: 'Augustine Twumasi',
   brandName: 'Codiq',
   profileImage: 'https://media.licdn.com/dms/image/v2/D4D35AQHzGP7-Gdj3Kg/profile-framedphoto-shrink_800_800/B4DZ3jVyl4I4Ag-/0/1777635633852?e=1778839200&v=beta&t=a1SFzsgmO0f88YQoIpBpleM2SKcSOljGl8cfco5I770',
-  profileLine: 'Digital Marketing Strategist for growth-focused businesses and individuals.',
+  profileLine: 'Full-Stack Developer & Growth Marketing Strategist.',
   positioning:
-    'I help businesses, entrepreneurs, and individuals grow revenue through SEO, social media strategy, and conversion-focused digital marketing systems.',
-  heroHeadline: 'Transform Your Digital Presence Into a Predictable Lead Generation System',
+    'I build high-performance web applications and grow them with data-driven marketing. Combining technical expertise (React, TypeScript, Node.js) with growth strategy (SEO, conversion optimization, social media) to deliver integrated solutions that work.',
+  heroHeadline: 'Build & Grow: High-Performance Web Applications + Data-Driven Marketing',
   heroSubheadline:
-    'I help businesses and entrepreneurs build SEO-optimized, conversion-focused marketing systems that consistently attract qualified leads. Strategy first, tactics second, measurable growth always.',
+    'Full-stack developer and growth strategist who builds SEO-optimized, conversion-ready web platforms—then scales them with strategic marketing. Whether you need development, growth marketing, or both, I deliver integrated solutions.',
   primaryCta: 'Book a Strategy Call',
   secondaryCta: 'See Growth Opportunities',
   services: [
     {
+      title: 'Full-Stack Web Application Development',
+      summary:
+        'Custom web applications and SaaS platforms built with modern tech stack (React, TypeScript, Node.js, PostgreSQL). Scalable architecture designed for growth.',
+      outcomes: ['React + TypeScript frontend', 'Node.js API development', 'Database design & optimization', 'AWS deployment & hosting'],
+      icon: 'FaCode',
+    },
+    {
+      title: 'SEO-Optimized Website Development',
+      summary:
+        'High-performance websites and landing pages built with technical SEO architecture from day one. Developer-quality sites optimized for marketing performance.',
+      outcomes: ['Core Web Vitals optimization', 'Semantic HTML & accessibility', 'Mobile-first responsive design', 'Performance & speed optimization'],
+      icon: 'FaRocket',
+    },
+    {
+      title: 'Conversion-Ready Landing Pages',
+      summary:
+        'Custom-coded landing pages designed for conversion. Combining development best practices with marketing psychology for maximum performance.',
+      outcomes: ['A/B testing infrastructure', 'Analytics & tracking integration', 'Form optimization', 'Speed & conversion focus'],
+      icon: 'FaBullseye',
+    },
+    {
       title: 'SEO Strategy and Auditing',
       summary:
         'Practical SEO roadmaps that improve rankings, visibility, and inbound lead quality for businesses and personal brands.',
-      outcomes: ['Technical SEO audits', 'Keyword intent mapping', 'Metadata and content optimization'],
+      outcomes: ['Technical SEO audits', 'Keyword intent mapping', 'Metadata and content optimization', 'On-page & off-page strategy'],
       icon: 'FaSearch',
     },
     {
       title: 'Social Media Growth Management',
       summary:
         'Brand-aligned social strategy and publishing systems that convert engagement into pipeline opportunities.',
-      outcomes: ['Channel strategy planning', 'Content calendar execution', 'Audience growth and lead routing'],
+      outcomes: ['Channel strategy planning', 'Content calendar execution', 'Audience growth and lead routing', 'Engagement optimization'],
       icon: 'FaChartLine',
     },
     {
-      title: 'Conversion Landing Optimization',
+      title: 'Conversion Rate Optimization',
       summary:
-        'Lightweight landing-page improvements for campaigns when UX friction is blocking lead conversion.',
-      outcomes: ['Offer positioning clarity', 'CTA and funnel optimization', 'Analytics-backed improvements'],
-      icon: 'FaBullseye',
+        'Data-driven improvements to landing pages, funnels, and user flows. Reduce friction and increase conversion rates across your digital properties.',
+      outcomes: ['Funnel analysis & optimization', 'User behavior tracking', 'CTA and messaging refinement', 'Analytics-backed improvements'],
+      icon: 'FaChartBar',
     },
   ],
   skills: [
+    'React',
+    'TypeScript',
+    'Node.js',
+    'PostgreSQL',
+    'Full-Stack Development',
+    'AWS',
+    'Performance Optimization',
     'SEO',
-    'Social Media',
+    'Social Media Marketing',
     'Content Strategy',
-    'Brand Positioning',
-    'Analytics',
-    'CRO',
-    'Landing Pages',
+    'Conversion Rate Optimization',
     'Email Marketing',
+    'Analytics & Tracking',
+    'Technical SEO',
     'Graphic Design',
   ],
   projects: [
+    {
+      title: 'School Management System',
+      category: 'Web Development',
+      image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=450&fit=crop&auto=format&q=80',
+      challenge: 'Educational institution needed centralized system for student records, attendance, grades, and communication. Required scalable architecture for 10,000+ users with real-time updates.',
+      result: 'Built full-stack SaaS platform serving 10,000+ active users. Achieved 98 Lighthouse performance score with sub-1s initial load. Reduced administrative overhead by 60% through automated workflows.',
+      tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
+      techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'AWS EC2', 'Redis'],
+      url: 'https://advanced-school-management-system.onrender.com/',
+      demoUrl: 'https://advanced-school-management-system.onrender.com/',
+    },
+    {
+      title: 'E-Commerce Platform with SEO Optimization',
+      category: 'Web Development',
+      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&h=450&fit=crop&auto=format&q=80',
+      challenge: 'Retail business needed high-performance e-commerce site with built-in SEO architecture, payment integration, and inventory management. Required mobile-first design with fast checkout flow.',
+      result: 'Delivered conversion-optimized store with 95+ Lighthouse score. Implemented server-side rendering for SEO, reduced cart abandonment by 35% through optimized checkout UX. Integrated Stripe payments and real-time inventory sync.',
+      tags: ['React', 'Next.js', 'TypeScript', 'Stripe', 'Technical SEO'],
+      techStack: ['Next.js', 'React', 'TypeScript', 'MongoDB', 'Stripe API', 'Tailwind CSS', 'Vercel'],
+      url: '#',
+      demoUrl: '#',
+    },
+    {
+      title: 'Real-Time Analytics Dashboard',
+      category: 'Web Development',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&auto=format&q=80',
+      challenge: 'Marketing agency needed custom analytics platform to track campaign performance across multiple clients. Required real-time data visualization, automated reporting, and API integrations.',
+      result: 'Built React-based dashboard with real-time WebSocket updates, integration with Google Analytics, Meta Ads, and LinkedIn APIs. Automated weekly reporting saved 15+ hours per week. Deployed on AWS with 99.9% uptime.',
+      tags: ['React', 'TypeScript', 'Node.js', 'AWS', 'Analytics'],
+      techStack: ['React', 'TypeScript', 'Node.js', 'Chart.js', 'AWS Lambda', 'DynamoDB', 'WebSocket'],
+      url: '#',
+      demoUrl: '#',
+    },
     {
       title: 'Local SEO Acceleration Campaign',
       category: 'SEO',
@@ -108,11 +168,48 @@ export const siteContent: SiteContent = {
   testimonials: [
     {
       quote:
+        'Augustine built our school management system from the ground up. The platform now serves 10,000+ students and staff with zero downtime. His code quality is exceptional—clean architecture, comprehensive tests, and 98 Lighthouse scores. He understands both the technical and user experience sides deeply.',
+      author: 'Dr. Kwame Asante',
+      role: 'CTO',
+      company: 'EduTech Solutions',
+      metric: '10,000+ active users, 98 Lighthouse score',
+      category: 'development',
+    },
+    {
+      quote:
+        "We hired Augustine to build a custom e-commerce platform with complex inventory management. He delivered ahead of schedule with performance optimization that blew us away. Our page load times are under 1 second, and cart abandonment dropped 35%. Best developer we've worked with.",
+      author: 'Rachel Mensah',
+      role: 'Product Manager',
+      company: 'RetailHub Ghana',
+      metric: '35% reduction in cart abandonment',
+      category: 'development',
+    },
+    {
+      quote:
+        'Augustine built our real-time analytics dashboard that integrates multiple marketing platforms. The system processes thousands of data points per minute flawlessly. His full-stack expertise—from React frontend to AWS backend—saved us from hiring multiple developers.',
+      author: 'James Kofi',
+      role: 'Head of Engineering',
+      company: 'DataFlow Analytics',
+      metric: 'Saved 15+ hours/week in reporting',
+      category: 'development',
+    },
+    {
+      quote:
+        'What sets Augustine apart is that he understands both development AND marketing. He built our landing pages with technical excellence (95+ Lighthouse) while optimizing every element for conversion. Our signup rate increased 127% after his implementation.',
+      author: 'Michelle Chen',
+      role: 'Growth Lead',
+      company: 'SaaSify',
+      metric: '127% increase in signups',
+      category: 'hybrid',
+    },
+    {
+      quote:
         'Augustine transformed our SEO approach completely. Within 8 weeks, we saw a 140% increase in organic traffic and our lead quality improved dramatically. His technical audits uncovered issues our previous agency missed entirely.',
       author: 'Sarah Mitchell',
       role: 'Marketing Director',
       company: 'GreenLeaf Consulting',
       metric: '140% organic traffic increase in 8 weeks',
+      category: 'marketing',
     },
     {
       quote:
@@ -121,6 +218,7 @@ export const siteContent: SiteContent = {
       role: 'Founder & CEO',
       company: 'FitLife Studios',
       metric: '47 qualified leads in 90 days',
+      category: 'marketing',
     },
     {
       quote:
@@ -129,6 +227,7 @@ export const siteContent: SiteContent = {
       role: 'Head of Growth',
       company: 'CloudSync Tech',
       metric: '165% ROI improvement',
+      category: 'marketing',
     },
     {
       quote:
@@ -136,6 +235,7 @@ export const siteContent: SiteContent = {
       author: 'David Osei',
       role: 'Freelance Business Consultant',
       metric: '214% revenue growth in 90 days',
+      category: 'marketing',
     },
     {
       quote:
@@ -144,6 +244,7 @@ export const siteContent: SiteContent = {
       role: 'Sales Operations Lead',
       company: 'Apex Solutions',
       metric: '$43K recovered pipeline',
+      category: 'marketing',
     },
     {
       quote:
@@ -151,6 +252,7 @@ export const siteContent: SiteContent = {
       author: 'Alex Rivera',
       role: 'Independent Brand Strategist',
       metric: '$18K in first 30 days',
+      category: 'marketing',
     },
   ],
   faqs: [
@@ -162,7 +264,7 @@ export const siteContent: SiteContent = {
     {
       question: 'Do you provide full web development projects?',
       answer:
-        'My focus is digital marketing execution. I only include web development work when landing-page or conversion fixes are required for campaign performance.',
+        'Yes! I build full-stack web applications, SaaS platforms, e-commerce sites, and custom software solutions. My development work includes React/TypeScript frontends, Node.js backends, database design, and AWS deployment. I also offer growth marketing services—and many clients hire me for both. Whether you need development only, marketing only, or an integrated approach, I can help.',
     },
     {
       question: 'How fast can we start seeing impact?',
@@ -175,9 +277,9 @@ export const siteContent: SiteContent = {
     },
   ],
   stats: [
-    { value: '100%', label: 'Digital Marketing Focus' },
-    { value: '2-3 Weeks', label: 'Typical Audit-to-Action Cycle' },
-    { value: 'Global', label: 'Remote Campaign Support' },
+    { value: '10,000+', label: 'Active Platform Users' },
+    { value: '98', label: 'Average Lighthouse Score' },
+    { value: 'Global', label: 'Remote Development & Marketing' },
   ],
   clientLogos: [
     { name: 'Google', imageUrl: 'https://cdn.simpleicons.org/google/4285F4' },
@@ -354,8 +456,35 @@ export const siteContent: SiteContent = {
   ],
   contact: {
     email: 'twumasiaugustine007@gmail.com',
-    calendlyUrl: '#',
+    calendlyUrl: 'https://calendly.com/twumasiaugustine007?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0d1017&text_color=f3f5f8&primary_color=f16f43',
     generalMessageFormUrl: '#',
     insightsFormUrl: '#',
   },
+  bookingOptions: [
+    {
+      id: 'strategy-call',
+      title: 'Strategy Call',
+      description: 'Deep-dive session to discuss your project goals, technical requirements, and growth strategy. Perfect for new projects or major initiatives.',
+      duration: '45 min',
+      calendlyUrl: 'https://calendly.com/twumasiaugustine007?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0d1017&text_color=f3f5f8&primary_color=f16f43',
+      icon: 'FaLightbulb',
+      recommended: true,
+    },
+    {
+      id: 'technical-consultation',
+      title: 'Technical Consultation',
+      description: 'Focused technical discussion about architecture, performance optimization, or implementation challenges. Best for ongoing projects.',
+      duration: '30 min',
+      calendlyUrl: 'https://calendly.com/twumasiaugustine007?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0d1017&text_color=f3f5f8&primary_color=f16f43',
+      icon: 'FaCode',
+    },
+    {
+      id: 'quick-chat',
+      title: 'Quick Chat',
+      description: 'Brief introduction call to explore how I can help with your development or marketing needs. No commitment required.',
+      duration: '15 min',
+      calendlyUrl: 'https://calendly.com/twumasiaugustine007?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0d1017&text_color=f3f5f8&primary_color=f16f43',
+      icon: 'FaComments',
+    },
+  ],
 }

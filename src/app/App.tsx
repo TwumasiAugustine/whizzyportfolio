@@ -19,6 +19,7 @@ const BlogSection = lazy(() => import('../sections/BlogSection').then(m => ({ de
 const CertificationsSection = lazy(() => import('../sections/CertificationsSection').then(m => ({ default: m.CertificationsSection })))
 const LeadMagnetSection = lazy(() => import('../sections/LeadMagnetSection').then(m => ({ default: m.LeadMagnetSection })))
 const FaqSection = lazy(() => import('../sections/FaqSection').then(m => ({ default: m.FaqSection })))
+const BookingSection = lazy(() => import('../sections/BookingSection').then(m => ({ default: m.BookingSection })))
 const ContactSection = lazy(() => import('../sections/ContactSection').then(m => ({ default: m.ContactSection })))
 const FooterSection = lazy(() => import('../sections/FooterSection').then(m => ({ default: m.FooterSection })))
 
@@ -28,6 +29,7 @@ const navItems = [
   { label: 'Services', href: '#services' },
   { label: 'Works', href: '#projects' },
   { label: 'Blog', href: '#blog' },
+  { label: 'Book Call', href: '#booking' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -139,6 +141,7 @@ function App() {
             <BlogSection content={siteContent} />
             <FaqSection content={siteContent} />
             <LeadMagnetSection content={siteContent} onOpenPopup={openInsightsPopup} />
+            <BookingSection content={siteContent} />
             <ContactSection content={siteContent} />
           </Suspense>
         </ErrorBoundary>

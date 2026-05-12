@@ -80,7 +80,7 @@ export function HeroSection({ content }: HeroSectionProps) {
               <span /> Available for consulting
             </p>
             <div className="hero-cta-group">
-              <a className="btn btn-primary" href="#contact">
+              <a className="btn btn-primary" href="#booking">
                 {content.primaryCta}
               </a>
               <a className="btn btn-secondary" href="#insights">

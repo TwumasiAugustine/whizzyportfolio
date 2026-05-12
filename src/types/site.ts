@@ -7,13 +7,14 @@ export type Service = {
 
 export type Project = {
   title: string
-  category: string
+  category: 'Web Development' | 'Marketing' | 'Design' | 'Graphic Design' | 'Email Marketing' | 'Landing Pages' | 'SEO'
   challenge: string
   result: string
   tags: string[]
   image?: string
   url?: string
   demoUrl?: string
+  techStack?: string[]
 }
 
 export type Testimonial = {
@@ -22,6 +23,7 @@ export type Testimonial = {
   role: string
   company?: string
   metric?: string
+  category?: 'development' | 'marketing' | 'hybrid'
 }
 
 export type FaqItem = {
@@ -95,4 +97,13 @@ export type SiteContent = {
     generalMessageFormUrl: string
     insightsFormUrl: string
   }
+  bookingOptions?: Array<{
+    id: string
+    title: string
+    description: string
+    duration: string
+    calendlyUrl: string
+    icon: string
+    recommended?: boolean
+  }>
 }
