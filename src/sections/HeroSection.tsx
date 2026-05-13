@@ -1,7 +1,7 @@
 import { motion } from 'motion/react'
 import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub, FaDownload } from 'react-icons/fa6'
 import { InfiniteCarousel } from '../components/InfiniteCarousel'
-import { trackEvent } from '../components/GoogleAnalytics'
+import { trackEvent } from '../lib/analytics'
 import type { SiteContent } from '../types/site'
 
 type HeroSectionProps = {

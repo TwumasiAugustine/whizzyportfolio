@@ -22,7 +22,7 @@ const cardVariants = {
 export function BlogSection({ content }: BlogSectionProps) {
   const [selectedCategory, setSelectedCategory] = useState('All')
 
-  const blogPosts = content.blogPosts || []
+  const blogPosts = useMemo(() => content.blogPosts || [], [content.blogPosts])
 
   const categories = useMemo(() => {
     const cats = new Set<string>()

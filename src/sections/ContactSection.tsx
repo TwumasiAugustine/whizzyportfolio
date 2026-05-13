@@ -3,7 +3,7 @@ import type { FormEvent } from 'react'
 import { motion } from 'motion/react'
 import emailjs from '@emailjs/browser'
 import { FaCalendarAlt, FaEnvelope } from 'react-icons/fa'
-import { trackFormSubmit } from '../components/GoogleAnalytics'
+import { trackFormSubmit } from '../lib/analytics'
 import { CalendlyPopupButton } from '../components/CalendlyWidget'
 import type { SiteContent } from '../types/site'
 
@@ -24,6 +24,19 @@ export function ContactSection({ content }: ContactSectionProps) {
     setErrorMessage('')
 
     if (!formRef.current) return
+
+    // Honeypot spam protection - if this field is filled, it's likely a bot
+    const honeypot = formRef.current.querySelector<HTMLInputElement>('input[name="website"]')
+    if (honeypot && honeypot.value) {
+      console.warn('Spam detected: honeypot field filled')
+      setFormStatus('error')
+      setErrorMessage('Submission rejected. Please try again.')
+      setTimeout(() => {
+        setFormStatus('idle')
+        setErrorMessage('')
+      }, 3000)
+      return
+    }
 
     try {
       // EmailJS configuration - user needs to set up their own account
@@ -132,6 +145,19 @@ export function ContactSection({ content }: ContactSectionProps) {
           Message <span aria-label="required">*</span>
         </label>
         <textarea id="message" name="message" rows={5} required disabled={formStatus === 'loading'} />
+
+        {/* Honeypot field - hidden from users, bots will fill it */}
+        <div className="honeypot-field" aria-hidden="true">
+          <label htmlFor="website">Website (leave blank)</label>
+          <input
+            id="website"
+            name="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            placeholder=""
+          />
+        </div>
 
         <button type="submit" className="btn btn-primary" disabled={formStatus === 'loading'}>
           {formStatus === 'loading' ? 'Sending...' : 'Send Message'}

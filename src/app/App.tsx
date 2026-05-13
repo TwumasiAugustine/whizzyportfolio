@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '../components/GoogleAnalytics'
 import { InsightsPopup } from '../components/InsightsPopup'
 import { MobileMenu } from '../components/MobileMenu'
 import { ScrollProgress } from '../components/ScrollProgress'
+import { BackToTop } from '../components/BackToTop'
 import { siteContent } from '../data/site-content'
 import { AboutSection } from '../sections/AboutSection'
 import { HeroSection } from '../sections/HeroSection'
@@ -152,6 +153,8 @@ function App() {
           <FooterSection content={siteContent} />
         </Suspense>
       </ErrorBoundary>
+
+      <BackToTop />
     </>
   )
 }

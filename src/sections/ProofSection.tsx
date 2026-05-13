@@ -1,4 +1,5 @@
 import { SectionTitle } from '../components/SectionTitle'
+import { AnimatedCounter } from '../components/AnimatedCounter'
 import type { SiteContent } from '../types/site'
 
 type ProofSectionProps = {
@@ -16,7 +17,9 @@ export function ProofSection({ content }: ProofSectionProps) {
       <div className="stats-grid">
         {content.stats.map((stat) => (
           <article key={stat.label} className="stat-card">
-            <p className="stat-value">{stat.value}</p>
+            <p className="stat-value">
+              <AnimatedCounter value={stat.value} duration={2500} />
+            </p>
             <p className="stat-label">{stat.label}</p>
           </article>
         ))}
