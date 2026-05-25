@@ -120,7 +120,7 @@ export const siteContent: SiteContent = {
     {
       title: 'Campaign Landing Page Refresh',
       category: 'Landing Pages',
-      image: '/projects/landingpage.png',
+      image: '/projects/landingpage_50.webp',
       challenge: 'Paid and social traffic bounced due to unclear value proposition.',
       result: 'Refined layout and message hierarchy to improve conversion readiness and form starts.',
       tags: ['Landing Pages', 'CRO', 'SEO'],
@@ -140,7 +140,7 @@ export const siteContent: SiteContent = {
     {
       title: 'Brand Identity Design System',
       category: 'Graphic Design',
-      image: '/projects/WeekendSaleFlyer.jpg',
+      image: '/projects/WeekendSaleFlyer.webp',
       challenge: 'Startup needed cohesive visual identity across digital and print materials.',
       result: 'Developed complete brand kit including logo, color palette, typography, and templates.',
       tags: ['Graphic Design', 'Brand Positioning'],
@@ -149,7 +149,7 @@ export const siteContent: SiteContent = {
     {
       title: 'Social Media Content Graphics',
       category: 'Graphic Design',
-      image: '/projects/Non-ProfitAwarenessFlyer.jpg',
+      image: '/projects/Non-ProfitAwarenessFlyer.webp',
       challenge: 'Inconsistent visual style hurting brand recognition on social platforms.',
       result: 'Created branded template library for Instagram, LinkedIn, and Facebook posts.',
       tags: ['Graphic Design', 'Social Media', 'Brand Positioning'],
