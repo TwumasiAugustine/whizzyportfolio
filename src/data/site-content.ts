@@ -3,7 +3,7 @@ import type { SiteContent } from '../types/site'
 export const siteContent: SiteContent = {
   personName: 'Augustine Twumasi',
   brandName: 'Codiq',
-  profileImage: '../../public/projects/profile_pic 2.png',
+  profileImage: '/projects/profile_pic 2.png',
   profileLine: 'Full-Stack Developer & Growth Marketing Strategist.',
   positioning:
     'I build high-performance web applications and grow them with data-driven marketing. Combining technical expertise (React, TypeScript, Node.js) with growth strategy (SEO, conversion optimization, social media) to deliver integrated solutions that work.',
