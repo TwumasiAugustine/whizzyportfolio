@@ -187,8 +187,6 @@ export function ContactSection({ content }: ContactSectionProps) {
             ✗ {errorMessage}
           </motion.div>
         )}
-
-        <p className="fine-print">For direct communication: {content.contact.email}</p>
       </motion.form>
     </section>
   )

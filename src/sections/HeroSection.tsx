@@ -55,7 +55,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             })}
           </div>
           <a
-            href="/resume.pdf"
+            href="/public/resume.pdf"
             download="Augustine_Twumasi_Resume.pdf"
             className="btn btn-primary btn-sm hero-resume-btn"
             onClick={handleResumeDownload}

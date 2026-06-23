@@ -3,7 +3,7 @@ import type { SiteContent } from '../types/site'
 export const siteContent: SiteContent = {
   personName: 'Augustine Twumasi',
   brandName: 'Codiq',
-  profileImage: 'https://media.licdn.com/dms/image/v2/D4D35AQHzGP7-Gdj3Kg/profile-framedphoto-shrink_800_800/B4DZ3jVyl4I4Ag-/0/1777635633852?e=1778839200&v=beta&t=a1SFzsgmO0f88YQoIpBpleM2SKcSOljGl8cfco5I770',
+  profileImage: '../../public/profile_pic 2.png',
   profileLine: 'Full-Stack Developer & Growth Marketing Strategist.',
   positioning:
     'I build high-performance web applications and grow them with data-driven marketing. Combining technical expertise (React, TypeScript, Node.js) with growth strategy (SEO, conversion optimization, social media) to deliver integrated solutions that work.',
@@ -282,15 +282,6 @@ export const siteContent: SiteContent = {
     { value: 'Global', label: 'Remote Development & Marketing' },
   ],
   clientLogos: [
-    { name: 'Google', imageUrl: 'https://cdn.simpleicons.org/google/4285F4' },
-    { name: 'Amazon', imageUrl: 'https://cdn.simpleicons.org/amazon/FF9900' },
-    { name: 'LinkedIn', imageUrl: 'https://cdn.simpleicons.org/linkedin/0A66C2' },
-    { name: 'Slack', imageUrl: 'https://cdn.simpleicons.org/slack/4A154B' },
-    { name: 'Walmart', imageUrl: 'https://cdn.simpleicons.org/walmart/0071CE' },
-    { name: 'GreenLeaf Consulting', imageUrl: 'https://ui-avatars.com/api/?name=GreenLeaf+Consulting&background=10b981&color=fff&size=120&bold=true' },
-    { name: 'FitLife Studios', imageUrl: 'https://ui-avatars.com/api/?name=FitLife+Studios&background=f16f43&color=fff&size=120&bold=true' },
-    { name: 'CloudSync', imageUrl: 'https://ui-avatars.com/api/?name=CloudSync&background=3b82f6&color=fff&size=120&bold=true' },
-    { name: 'Apex Solutions', imageUrl: 'https://ui-avatars.com/api/?name=Apex+Solutions&background=8b5cf6&color=fff&size=120&bold=true' },
     { name: 'KinaPharma', imageUrl: 'https://ui-avatars.com/api/?name=KinaPharma&background=06b6d4&color=fff&size=120&bold=true' },
     { name: 'WhizzyInnovation', imageUrl: 'https://ui-avatars.com/api/?name=Whizzy+Innovation&background=f59e0b&color=fff&size=120&bold=true' },
   ],

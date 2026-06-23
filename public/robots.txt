@@ -1,34 +1,99 @@
+# ==========================================
+# Robots.txt
+# https://augustinetwumasi.vercel.app
+# ==========================================
+
 # Allow all crawlers
 User-agent: *
 Allow: /
 
-# Explicitly allow AI bots
+# ==========================
+# OpenAI
+# ==========================
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+# ==========================
+# Anthropic
+# ==========================
+User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Legacy Anthropic bot
 User-agent: anthropic-ai
 Allow: /
 
+# Legacy retrieval bot
 User-agent: Claude-Web
 Allow: /
 
-User-agent: CCBot
+# ==========================
+# Google AI
+# ==========================
+User-agent: Google-Extended
 Allow: /
 
+# ==========================
+# Perplexity
+# ==========================
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: FacebookBot
+User-agent: Perplexity-User
+Allow: /
+
+# ==========================
+# Common Crawl
+# ==========================
+User-agent: CCBot
+Allow: /
+
+# ==========================
+# Apple Intelligence
+# ==========================
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap location
+# ==========================
+# Meta AI
+# ==========================
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# ==========================
+# ByteDance AI
+# ==========================
+User-agent: Bytespider
+Allow: /
+
+# ==========================
+# Cohere
+# ==========================
+User-agent: cohere-ai
+Allow: /
+
+# ==========================
+# Sitemap
+# ==========================
 Sitemap: https://augustinetwumasi.vercel.app/sitemap.xml
