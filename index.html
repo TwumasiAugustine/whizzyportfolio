@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f16f43" />
-    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Codiq" />
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript>
       <link
@@ -25,71 +30,84 @@
         rel="stylesheet"
       />
     </noscript>
-    
+
     <!-- Primary Meta Tags -->
-    <title>Augustine Twumasi | Web Developer & Digital Marketing Specialist</title>
+    <title>
+      Augustine Twumasi | Full-Stack Developer, SEO Specialist & AI Engineer
+    </title>
     <meta
       name="title"
-      content="Augustine Twumasi | Web Developer & Digital Marketing Specialist"
+      content="Augustine Twumasi | Full-Stack Developer, SEO Specialist & AI Engineer"
     />
     <meta
       name="description"
-      content="Full stack web developer & digital marketing expert. Custom React apps, SEO strategy, social media growth, lead generation. 214% average revenue growth."
+      content="Full-stack software developer, technical SEO specialist, digital marketing strategist, and AI engineer. Web development, SEO audits, GEO optimization, and growth marketing."
     />
     <meta
       name="keywords"
-      content="full stack web developer, digital marketing consultant, SEO specialist, web development services, conversion optimization, React developer, TypeScript developer, marketing strategy, lead generation"
+      content="Augustine Twumasi, full stack developer, technical SEO, local SEO, GEO, AI engineer, React developer, TypeScript, Node.js, digital marketing, prompt engineering, llms.txt, web development services"
     />
     <meta name="author" content="Augustine Twumasi" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://augustinetwumasi.vercel.app/" />
-    
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs Full Profile" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Augustine Twumasi Portfolio" />
+
     <!-- Content Security Policy -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: http:; connect-src 'self' https://www.google-analytics.com https://api.emailjs.com https://calendly.com; frame-src 'self' https://calendly.com;"
     />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://augustinetwumasi.vercel.app/" />
     <meta
       property="og:title"
-      content="Augustine Twumasi | Web Developer & Digital Marketing Specialist"
+      content="Augustine Twumasi | Full-Stack Developer, SEO Specialist & AI Engineer"
     />
     <meta
       property="og:description"
-      content="Build modern web applications & grow your digital presence. Full stack development (React, TypeScript, Node.js) + marketing (SEO, social media, CRO)."
+      content="Build, optimize & scale with full-stack development, technical SEO, GEO, AI engineering, and digital marketing."
     />
-    <meta property="og:image" content="https://augustinetwumasi.vercel.app/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://augustinetwumasi.vercel.app/og-image.png"
+    />
     <meta property="og:site_name" content="Codiq" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://augustinetwumasi.vercel.app/" />
     <meta
       name="twitter:title"
-      content="Augustine Twumasi | Web Developer & Digital Marketing Specialist"
+      content="Augustine Twumasi | Full-Stack Developer, SEO Specialist & AI Engineer"
     />
     <meta
       name="twitter:description"
-      content="Full stack web developer & digital marketing expert. Custom React apps, SEO, social media growth, lead generation. 214% avg revenue growth."
+      content="Full-stack developer, technical SEO specialist, AI engineer & digital marketing strategist. Web apps, SEO audits, GEO & growth marketing."
     />
-    <meta name="twitter:image" content="https://augustinetwumasi.vercel.app/og-image.png" />
+    <meta
+      name="twitter:image"
+      content="https://augustinetwumasi.vercel.app/og-image.png"
+    />
     <meta name="twitter:creator" content="@dev_twumstine" />
-    
+
     <!-- Structured Data -->
+    <!-- PERSON (Primary Entity) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://augustinetwumasi.vercel.app/#person",
         "name": "Augustine Twumasi",
         "alternateName": "Codiq",
-        "jobTitle": "Full Stack Web Developer and Digital Marketing Strategist",
-        "description": "Full stack web developer and digital marketing strategist specializing in SEO, conversion optimization, and lead generation systems.",
         "url": "https://augustinetwumasi.vercel.app/",
-        "image": "https://media.licdn.com/dms/image/v2/D4D35AQHzGP7-Gdj3Kg/profile-framedphoto-shrink_800_800/B4DZ3jVyl4I4Ag-/0/1777635633852",
-        "email": "twumasiaugustine007@gmail.com",
+        "image": "/projects/profile_pic 2.png",
+        "jobTitle": "Full-Stack Software Developer, Technical SEO Specialist, AI Engineer & Digital Marketing Strategist",
+        "description": "Full-stack software developer, technical SEO specialist, digital marketing strategist, and AI engineer. Designs, builds, optimizes, and scales websites, applications, and digital marketing systems.",
+        "email": "mailto:twumasiaugustine007@gmail.com",
         "telephone": "+233553539748",
         "address": {
           "@type": "PostalAddress",
@@ -103,64 +121,88 @@
           "https://www.instagram.com/devtwumstine/"
         ],
         "knowsAbout": [
-          "Web Development",
-          "Digital Marketing",
-          "SEO",
-          "React",
+          "Full-Stack Web Development",
+          "React Development",
           "TypeScript",
-          "Node.js",
-          "Conversion Optimization",
+          "Node.js Development",
+          "Technical SEO",
+          "Local SEO",
+          "Generative Engine Optimization",
+          "Search Engine Optimization",
+          "AI Engineering",
+          "Prompt Engineering",
+          "Digital Marketing Strategy",
           "Social Media Marketing",
-          "Email Marketing",
-          "Landing Page Design"
+          "Conversion Rate Optimization",
+          "Content Strategy",
+          "Web Performance Optimization",
+          "Structured Data",
+          "Core Web Vitals"
         ],
         "worksFor": {
-          "@type": "Organization",
-          "name": "Codiq"
+          "@id": "https://augustinetwumasi.vercel.app/#organization"
         }
       }
     </script>
-    
-    <!-- Service Structured Data -->
+
+    <!-- ORGANIZATION (Brand Entity) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://augustinetwumasi.vercel.app/#organization",
+        "name": "Codiq",
+        "url": "https://augustinetwumasi.vercel.app/",
+        "logo": "https://augustinetwumasi.vercel.app/logo.png",
+        "founder": {
+          "@id": "https://augustinetwumasi.vercel.app/#person"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/augustinetwumasi/",
+          "https://github.com/TwumasiAugustine"
+        ]
+      }
+    </script>
+
+    <!-- SERVICE (SEO + Conversion Optimized) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": "Professional Services",
+        "@id": "https://augustinetwumasi.vercel.app/#service",
+        "name": "SEO, AI, Web Development & Digital Marketing Services",
+        "serviceType": "Software Development, SEO & Digital Growth Services",
         "provider": {
-          "@type": "Person",
-          "name": "Augustine Twumasi"
+          "@id": "https://augustinetwumasi.vercel.app/#person"
         },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Worldwide"
-        },
+        "areaServed": "Worldwide",
+        "description": "Professional services: full-stack web development, technical SEO, local SEO, GEO optimization, AI consulting, digital marketing, and performance optimization.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Digital Marketing and Web Development Services",
+          "name": "Core Growth Services",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "SEO Strategy and Auditing",
-                "description": "Practical SEO roadmaps that improve rankings, visibility, and inbound lead quality for businesses and personal brands."
+                "name": "SEO Strategy & Technical Audits",
+                "description": "Advanced SEO audits and strategies to improve rankings, organic visibility, and search performance."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Social Media Growth Management",
-                "description": "Brand-aligned social strategy and publishing systems that convert engagement into pipeline opportunities."
+                "name": "Conversion Rate Optimization (CRO)",
+                "description": "Landing page and funnel optimization to improve conversions and reduce customer acquisition costs."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Conversion Landing Optimization",
-                "description": "Lightweight landing-page improvements for campaigns when UX friction is blocking lead conversion."
+                "name": "Social Media Growth Systems",
+                "description": "Content systems and distribution strategies designed to convert engagement into leads."
               }
             },
             {
@@ -168,83 +210,97 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Full Stack Web Development",
-                "description": "Modern, scalable web applications built with React, TypeScript, and Node.js."
+                "description": "Modern web applications built with React, TypeScript, and Node.js focused on performance and scalability."
               }
             }
           ]
         }
       }
     </script>
-    
-    <!-- Review/Testimonial Structured Data -->
+
+    <!-- WEB SITE (Sitelinks + Search Box SEO Boost) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Augustine Twumasi",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "bestRating": "5",
-          "ratingCount": "6"
+        "@type": "WebSite",
+        "@id": "https://augustinetwumasi.vercel.app/#website",
+        "name": "Codiq Portfolio",
+        "url": "https://augustinetwumasi.vercel.app/",
+        "description": "Official portfolio of Augustine Twumasi, Full Stack Developer and Digital Marketing Strategist.",
+        "publisher": {
+          "@id": "https://augustinetwumasi.vercel.app/#organization"
         },
-        "review": [
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://augustinetwumasi.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- BREADCRUMB (SEO hierarchy boost) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Sarah Mitchell"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5"
-            },
-            "reviewBody": "Augustine transformed our SEO approach completely. Within 8 weeks, we saw a 140% increase in organic traffic and our lead quality improved dramatically."
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://augustinetwumasi.vercel.app/"
           },
           {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Marcus Thompson"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5"
-            },
-            "reviewBody": "Within 90 days, our Instagram engagement jumped from 2% to 8.3%, and we generated 47 qualified leads directly from social."
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://augustinetwumasi.vercel.app/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Projects",
+            "item": "https://augustinetwumasi.vercel.app/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Blog",
+            "item": "https://augustinetwumasi.vercel.app/blog"
           }
         ]
       }
     </script>
-    
-    <!-- FAQ Structured Data -->
+
+    <!-- FAQ (Rich Results Optimized) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
+        "@id": "https://augustinetwumasi.vercel.app/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Who do you work with?",
+            "name": "Who is Augustine Twumasi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "I work with businesses, entrepreneurs, freelancers, creators, and individuals who need stronger digital marketing performance and lead consistency. From SMEs to personal brands, I help clients achieve measurable growth."
+              "text": "Augustine Twumasi is a Full-Stack Software Developer, Technical SEO Specialist, Digital Marketing Strategist, AI Engineer, and Technology Consultant."
             }
           },
           {
             "@type": "Question",
-            "name": "Do you provide full web development projects?",
+            "name": "What services do you provide?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "My focus is digital marketing execution. I only include web development work when landing-page or conversion fixes are required for campaign performance."
+              "text": "Full-stack web development, technical SEO, local SEO, SEO audits, content strategy, digital marketing consulting, social media strategy, paid advertising, AI consulting, WordPress development, analytics implementation, and performance optimization."
             }
           },
           {
             "@type": "Question",
-            "name": "How fast can we start seeing impact?",
+            "name": "Are you available for professional work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most clients begin with quick-win SEO and funnel improvements in the first 2-3 weeks, then scale based on results."
+              "text": "Yes. Available for freelance projects, technical consulting, SEO consulting, AI consulting, contract work, full-time employment, technical mentoring, public speaking, and workshops."
             }
           },
           {
@@ -259,30 +315,48 @@
       }
     </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-42DZN3FFGH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-42DZN3FFGH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-42DZN3FFGH');
-</script>
+      gtag("config", "G-42DZN3FFGH");
+    </script>
   </head>
   <body>
     <noscript>
       <div class="noscript-banner">
-        <strong>JavaScript Required:</strong> This portfolio requires JavaScript to function properly. 
-        Please enable JavaScript or contact me directly at 
-        <a href="mailto:twumasiaugustine007@gmail.com">twumasiaugustine007@gmail.com</a> or 
+        <strong>JavaScript Required:</strong> This portfolio requires JavaScript
+        to function properly. Please enable JavaScript or contact me directly at
+        <a href="mailto:twumasiaugustine007@gmail.com"
+          >twumasiaugustine007@gmail.com</a
+        >
+        or
         <a href="tel:+233552539748">+233 55 253 9748</a>
       </div>
     </noscript>
     <div id="root"></div>
-    
+
     <!-- Calendly Widget Script -->
-    <link defer async href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-    <script defer src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    
+    <link
+      defer
+      async
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

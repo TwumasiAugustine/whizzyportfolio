@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { FaLightbulb, FaHandshake, FaChartLine } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 
@@ -22,13 +23,17 @@ const itemVariants = {
   },
 }
 
-export function AboutSection() {
+type AboutSectionProps = {
+  compact?: boolean
+}
+
+export function AboutSection({ compact = false }: AboutSectionProps) {
   return (
     <section id="about" className="section-shell" aria-labelledby="about-title">
       <SectionTitle
         eyebrow="About"
-        title="Building High-Performance Platforms + Strategic Growth Marketing"
-        blurb="I help businesses by building technically excellent web applications and scaling them with data-driven marketing. Whether you need development, growth strategy, or both—I deliver integrated solutions that work."
+        title="Full-Stack Development, SEO & AI — Built to Scale"
+        blurb="I design, build, optimize, and scale websites, applications, and digital marketing systems that improve business visibility, user experience, and measurable growth."
       />
       <motion.div
         className="about-grid"
@@ -43,7 +48,9 @@ export function AboutSection() {
           </div>
           <h3>How I Work</h3>
           <p>
-            I start by understanding your business goals and technical requirements. Then I build solutions that integrate development excellence with growth strategy—whether that's a high-performance web platform with built-in SEO architecture, or growth marketing systems that scale your existing product.
+            I start by understanding your business goals — then deliver integrated solutions across software engineering,
+            search optimization, content strategy, and AI automation. Every project is built for performance, discoverability,
+            and conversion.
           </p>
         </motion.article>
         <motion.article variants={itemVariants}>
@@ -52,7 +59,8 @@ export function AboutSection() {
           </div>
           <h3>Why Work With Me</h3>
           <p>
-            You get both technical expertise and growth strategy in one person. I've built platforms serving 10,000+ users with 98 Lighthouse scores, and I've scaled marketing campaigns generating 140%+ traffic increases. I understand code architecture and conversion psychology—so I build things that perform AND convert.
+            You get full-stack development, technical SEO, digital marketing, and AI engineering in one partner. I've built
+            platforms serving 10,000+ users with 98 Lighthouse scores and scaled campaigns generating 140%+ traffic increases.
           </p>
         </motion.article>
         <motion.article variants={itemVariants}>
@@ -62,14 +70,19 @@ export function AboutSection() {
           <h3>Core Expertise</h3>
           <ul className="about-skill-list" aria-label="Core expertise areas">
             <li>Full-Stack Web Development (React, TypeScript, Node.js)</li>
-            <li>High-Performance Architecture & AWS Deployment</li>
-            <li>Technical SEO & Core Web Vitals Optimization</li>
-            <li>Conversion-Focused Landing Pages & CRO</li>
-            <li>Growth Marketing & Social Media Strategy</li>
-            <li>Analytics, Tracking & Performance Measurement</li>
+            <li>Technical SEO, Local SEO & GEO Optimization</li>
+            <li>AI Engineering, Prompt Engineering & Automation</li>
+            <li>Digital Marketing & Content Strategy</li>
+            <li>Social Media Marketing & Paid Advertising</li>
+            <li>Analytics, Core Web Vitals & Performance</li>
           </ul>
         </motion.article>
       </motion.div>
+      {compact && (
+        <p className="section-view-all">
+          <Link to="/about">Learn more about me →</Link>
+        </p>
+      )}
     </section>
   )
 }

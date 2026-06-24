@@ -1,0 +1,125 @@
+{
+  "id": "/",
+  "name": "Codiq — Augustine Twumasi Portfolio",
+  "short_name": "Codiq",
+  "description": "Professional portfolio of Augustine Twumasi, a Full-Stack Software Developer, Technical SEO Specialist, Digital Marketing Strategist, and AI Engineer. Explore projects, technical articles, SEO insights, AI solutions, and digital marketing services.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "portrait-primary",
+  "background_color": "#080a0f",
+  "theme_color": "#f16f43",
+  "categories": [
+    "business",
+    "developer",
+    "technology",
+    "productivity",
+    "education",
+    "marketing"
+  ],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-desktop.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Homepage"
+    },
+    {
+      "src": "/screenshots/home-mobile.webp",
+      "sizes": "430x932",
+      "type": "image/webp",
+      "label": "Mobile Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Browse software engineering and SEO projects.",
+      "url": "/projects",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read technical articles and SEO guides.",
+      "url": "/blog",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Explore development, SEO, AI, and digital marketing services.",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch for freelance, consulting, or full-time opportunities.",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
+

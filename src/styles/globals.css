@@ -112,6 +112,7 @@ a {
   line-height: 1;
   font-family: 'Playfair Display', serif;
   color: var(--text);
+  text-decoration: none;
 }
 
 .top-nav {
@@ -137,7 +138,8 @@ a {
 }
 
 .top-nav a:hover,
-.top-nav a:focus-visible {
+.top-nav a:focus-visible,
+.top-nav a.active {
   color: var(--text);
   background: rgba(243, 245, 248, 0.05);
 }
@@ -3429,5 +3431,166 @@ select:focus-visible {
     top: 0.5rem;
     right: 0.5rem;
   }
+}
+
+/* ============================================
+   Dedicated Pages & Service Catalog
+   ============================================ */
+
+.page-hero {
+  padding-top: 2rem;
+}
+
+.page-intro {
+  margin-top: 1.25rem;
+  max-width: 68ch;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.section-view-all {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.section-view-all a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section-view-all a:hover {
+  text-decoration: underline;
+}
+
+.service-catalog-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.service-catalog-card {
+  background: var(--card-bg, rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.service-catalog-card h2 {
+  font-size: 1.35rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.service-catalog-list {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.service-catalog-list li {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-pill {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(243, 245, 248, 0.03);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cta-banner {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(241, 111, 67, 0.06), rgba(243, 180, 151, 0.04));
+}
+
+.cta-banner h2 {
+  margin-bottom: 0.75rem;
+}
+
+.cta-banner p {
+  max-width: 52ch;
+  margin: 0 auto 1.5rem;
+}
+
+.cta-banner .hero-cta-group {
+  justify-content: center;
+}
+
+.blog-topics-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  margin-bottom: 2rem;
+}
+
+.blog-topic-card {
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.blog-topic-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-topic-card ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.blog-topic-card li {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.availability-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+.availability-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--muted);
+}
+
+.availability-list svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.footer-nav a:hover {
+  color: var(--text);
 }
 

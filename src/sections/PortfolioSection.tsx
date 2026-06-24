@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { FaExternalLinkAlt, FaEye } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 import { ImageLightbox } from '../components/ImageLightbox'
@@ -8,6 +9,8 @@ import type { SiteContent, Project } from '../types/site'
 
 type PortfolioSectionProps = {
   content: SiteContent
+  limit?: number
+  showViewAll?: boolean
 }
 
 const cardVariants = {
@@ -23,7 +26,7 @@ const cardVariants = {
   exit: { opacity: 0, scale: 0.95, transition: { duration: 0.3 } },
 }
 
-export function PortfolioSection({ content }: PortfolioSectionProps) {
+export function PortfolioSection({ content, limit, showViewAll = false }: PortfolioSectionProps) {
   const [selectedSkill, setSelectedSkill] = useState('All')
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
@@ -90,8 +93,8 @@ export function PortfolioSection({ content }: PortfolioSectionProps) {
       })
     }
 
-    return filtered
-  }, [content.projects, selectedSkill, selectedCategory])
+    return filtered.slice(0, limit)
+  }, [content.projects, selectedSkill, selectedCategory, limit])
 
   return (
     <section id="projects" className="section-shell" aria-labelledby="projects-title">
@@ -227,8 +230,13 @@ export function PortfolioSection({ content }: PortfolioSectionProps) {
         </AnimatePresence>
       </div>
       {visibleProjects.length === 0 ? (
-        <p className="empty-state">No projects match this skill yet. Add case studies for this capability.</p>
+        <p className="empty-state">No projects match this filter yet.</p>
       ) : null}
+      {showViewAll && (
+        <p className="section-view-all">
+          <Link to="/projects">View all projects →</Link>
+        </p>
+      )}
       <ImageLightbox
         image={lightboxImage?.src || ''}
         alt={lightboxImage?.alt || ''}

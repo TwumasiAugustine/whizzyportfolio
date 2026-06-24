@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import {
   FaSearch,
   FaHashtag,
@@ -8,7 +9,8 @@ import {
   FaBullseye,
   FaLaptopCode,
   FaEnvelope,
-  FaPalette,
+  FaRobot,
+  FaServer,
 } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 
@@ -18,51 +20,56 @@ type Skill = {
   description: string
 }
 
-const skillData: Skill[] = [
+const defaultSkillData: Skill[] = [
   {
-    name: 'SEO & Search Strategy',
+    name: 'Full-Stack Development',
+    icon: FaLaptopCode,
+    description: 'React, TypeScript, Node.js, APIs, databases, and scalable architecture',
+  },
+  {
+    name: 'Technical SEO & GEO',
     icon: FaSearch,
-    description: 'Organic visibility, keyword research, and technical optimization',
+    description: 'Crawl optimization, structured data, Core Web Vitals, and AI search visibility',
+  },
+  {
+    name: 'AI Engineering',
+    icon: FaRobot,
+    description: 'Prompt engineering, AI agents, RAG, OpenAI/Anthropic APIs, and automation',
+  },
+  {
+    name: 'Digital Marketing',
+    icon: FaBullhorn,
+    description: 'Growth strategy, content marketing, CRO, and funnel optimization',
   },
   {
     name: 'Social Media Marketing',
     icon: FaHashtag,
-    description: 'Platform strategy, community building, and engagement growth',
+    description: 'Platform strategy, content calendars, and organic growth systems',
+  },
+  {
+    name: 'Paid Advertising',
+    icon: FaBullseye,
+    description: 'Google Ads, Meta Ads, LinkedIn Ads, and conversion tracking',
   },
   {
     name: 'Content Strategy',
     icon: FaPenNib,
-    description: 'Editorial planning, messaging architecture, and storytelling',
-  },
-  {
-    name: 'Brand Positioning',
-    icon: FaBullhorn,
-    description: 'Market differentiation, voice development, and identity systems',
+    description: 'Editorial planning, semantic SEO, and E-E-A-T optimization',
   },
   {
     name: 'Analytics & Insights',
     icon: FaChartBar,
-    description: 'Data interpretation, performance tracking, and reporting',
-  },
-  {
-    name: 'Conversion Optimization',
-    icon: FaBullseye,
-    description: 'A/B testing, funnel analysis, and user journey refinement',
-  },
-  {
-    name: 'Landing Page Design',
-    icon: FaLaptopCode,
-    description: 'High-converting layouts, UX design, and frontend development',
+    description: 'GA4, Search Console, GTM, Looker Studio, and KPI dashboards',
   },
   {
     name: 'Email Marketing',
     icon: FaEnvelope,
-    description: 'Campaign automation, segmentation, and deliverability',
+    description: 'Campaign automation, segmentation, and CRM integration',
   },
   {
-    name: 'Graphic Design',
-    icon: FaPalette,
-    description: 'Visual identity, marketing collateral, and brand assets',
+    name: 'Backend & DevOps',
+    icon: FaServer,
+    description: 'Node.js, Express, PostgreSQL, MongoDB, Supabase, and Vercel deployment',
   },
 ]
 
@@ -86,20 +93,26 @@ const cardVariants = {
   },
 }
 
-export function SkillsSection() {
+type SkillsSectionProps = {
+  compact?: boolean
+}
+
+export function SkillsSection({ compact = false }: SkillsSectionProps) {
+  const skillData = compact ? defaultSkillData.slice(0, 6) : defaultSkillData
+
   return (
     <section id="skills" className="section-shell" aria-labelledby="skills-title">
       <SectionTitle
         eyebrow="Skills"
-        title="Digital Marketing and Growth Skill Stack"
-        blurb="Core capabilities spanning strategy, execution, and optimization across the marketing funnel."
+        title="Development, SEO, AI & Marketing Stack"
+        blurb="Core capabilities spanning software engineering, search optimization, artificial intelligence, and digital growth."
       />
       <motion.div
         className="skills-grid"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
+        viewport={{ once: true, margin: '-80px' }}
       >
         {skillData.map((skill) => {
           const IconComponent = skill.icon
@@ -114,6 +127,11 @@ export function SkillsSection() {
           )
         })}
       </motion.div>
+      {compact && (
+        <p className="section-view-all">
+          <Link to="/about">See full expertise →</Link>
+        </p>
+      )}
     </section>
   )
 }

@@ -4,74 +4,142 @@ export const siteContent: SiteContent = {
   personName: 'Augustine Twumasi',
   brandName: 'Codiq',
   profileImage: '/projects/profile_pic 2.png',
-  profileLine: 'Full-Stack Developer & Growth Marketing Strategist.',
+  profileLine: 'Full-Stack Developer · Technical SEO Specialist · AI Engineer · Digital Marketing Strategist',
   positioning:
-    'I build high-performance web applications and grow them with data-driven marketing. Combining technical expertise (React, TypeScript, Node.js) with growth strategy (SEO, conversion optimization, social media) to deliver integrated solutions that work.',
-  heroHeadline: 'Build & Grow: High-Performance Web Applications + Data-Driven Marketing',
+    'I design, build, optimize, and scale websites, applications, and digital marketing systems that improve business visibility, user experience, and measurable growth.',
+  mission:
+    'To help businesses, startups, organizations, and professionals grow through software engineering, artificial intelligence, search engine optimization, content strategy, and digital marketing.',
+  heroHeadline: 'Build, Optimize & Scale — Software, SEO & AI That Drives Growth',
   heroSubheadline:
-    'Full-stack developer and growth strategist who builds SEO-optimized, conversion-ready web platforms—then scales them with strategic marketing. Whether you need development, growth marketing, or both, I deliver integrated solutions.',
+    'Full-stack developer, technical SEO specialist, and AI engineer who builds high-performance web platforms — then scales them with search optimization, GEO, and data-driven marketing.',
   primaryCta: 'Book a Strategy Call',
-  secondaryCta: 'See Growth Opportunities',
+  secondaryCta: 'Get Free SEO Audit',
   services: [
     {
-      title: 'Full-Stack Web Application Development',
+      title: 'Full-Stack Web Development',
       summary:
-        'Custom web applications and SaaS platforms built with modern tech stack (React, TypeScript, Node.js, PostgreSQL). Scalable architecture designed for growth.',
-      outcomes: ['React + TypeScript frontend', 'Node.js API development', 'Database design & optimization', 'AWS deployment & hosting'],
+        'Custom web applications, SaaS platforms, and business websites built with React, TypeScript, Node.js, and PostgreSQL. Scalable, accessible, and performance-first.',
+      outcomes: ['React + TypeScript frontend', 'Node.js REST APIs', 'Database design & optimization', 'Vercel & AWS deployment'],
       icon: 'FaCode',
     },
     {
-      title: 'SEO-Optimized Website Development',
+      title: 'Technical SEO & Audits',
       summary:
-        'High-performance websites and landing pages built with technical SEO architecture from day one. Developer-quality sites optimized for marketing performance.',
-      outcomes: ['Core Web Vitals optimization', 'Semantic HTML & accessibility', 'Mobile-first responsive design', 'Performance & speed optimization'],
-      icon: 'FaRocket',
-    },
-    {
-      title: 'Conversion-Ready Landing Pages',
-      summary:
-        'Custom-coded landing pages designed for conversion. Combining development best practices with marketing psychology for maximum performance.',
-      outcomes: ['A/B testing infrastructure', 'Analytics & tracking integration', 'Form optimization', 'Speed & conversion focus'],
-      icon: 'FaBullseye',
-    },
-    {
-      title: 'SEO Strategy and Auditing',
-      summary:
-        'Practical SEO roadmaps that improve rankings, visibility, and inbound lead quality for businesses and personal brands.',
-      outcomes: ['Technical SEO audits', 'Keyword intent mapping', 'Metadata and content optimization', 'On-page & off-page strategy'],
+        'Deep technical SEO audits covering crawlability, indexability, Core Web Vitals, structured data, and JavaScript SEO.',
+      outcomes: ['Technical SEO audits', 'Crawl & index analysis', 'Schema.org & JSON-LD', 'Core Web Vitals optimization'],
       icon: 'FaSearch',
     },
     {
-      title: 'Social Media Growth Management',
+      title: 'Generative Engine Optimization (GEO)',
       summary:
-        'Brand-aligned social strategy and publishing systems that convert engagement into pipeline opportunities.',
-      outcomes: ['Channel strategy planning', 'Content calendar execution', 'Audience growth and lead routing', 'Engagement optimization'],
+        'Optimize your site for AI-powered search — ChatGPT, Claude, Gemini, Perplexity, and AI Overviews. llms.txt, AI citation, and entity-first content.',
+      outcomes: ['llms.txt implementation', 'AI search visibility', 'AI content structuring', 'Entity-first strategy'],
+      icon: 'FaRocket',
+    },
+    {
+      title: 'Local SEO',
+      summary:
+        'Google Business Profile optimization, local citations, NAP consistency, and geo-targeted landing pages for local businesses.',
+      outcomes: ['Google Business Profile', 'Local keyword research', 'Local structured data', 'Review strategy'],
+      icon: 'FaBullseye',
+    },
+    {
+      title: 'AI Engineering & Consulting',
+      summary:
+        'Practical AI integration — prompt engineering, AI agents, RAG systems, OpenAI/Anthropic APIs, and AI-assisted development workflows.',
+      outcomes: ['Prompt engineering', 'AI agents & RAG', 'API integrations', 'AI automation workflows'],
       icon: 'FaChartLine',
     },
     {
-      title: 'Conversion Rate Optimization',
+      title: 'Digital Marketing & CRO',
       summary:
-        'Data-driven improvements to landing pages, funnels, and user flows. Reduce friction and increase conversion rates across your digital properties.',
-      outcomes: ['Funnel analysis & optimization', 'User behavior tracking', 'CTA and messaging refinement', 'Analytics-backed improvements'],
+        'Growth marketing, content strategy, social media, paid advertising, email marketing, and conversion rate optimization.',
+      outcomes: ['Content & social strategy', 'Paid ads (Google, Meta)', 'Email marketing funnels', 'CRO & analytics'],
       icon: 'FaChartBar',
     },
+  ],
+  professionalRoles: [
+    'Full-Stack Developer',
+    'Frontend Engineer',
+    'Backend Developer',
+    'SEO Specialist',
+    'Technical SEO Consultant',
+    'Local SEO Consultant',
+    'Digital Marketing Strategist',
+    'AI Engineer',
+    'AI Automation Consultant',
+    'Prompt Engineer',
+    'Web Performance Consultant',
+    'Content Strategist',
+    'Technical Writer',
+    'WordPress Developer',
+    'Website Consultant',
+  ],
+  industriesServed: [
+    'Startups',
+    'Small & Medium Businesses',
+    'Enterprise Organizations',
+    'Educational Institutions',
+    'E-learning Platforms',
+    'Personal Brands',
+    'Digital Agencies',
+    'SaaS Businesses',
+    'E-commerce',
+    'Healthcare Providers',
+    'Law Firms',
+    'Financial Services',
+    'Real Estate',
+    'Hospitality & Restaurants',
+    'NGOs & Non-profits',
+  ],
+  idealClients: [
+    'Business Owners',
+    'Startup Founders',
+    'Entrepreneurs',
+    'Marketing Managers',
+    'SEO Teams',
+    'Digital Marketing Agencies',
+    'Product Managers',
+    'Software Companies',
+    'Recruiters & Hiring Managers',
+    'Content Creators',
+    'Developers',
+    'Students',
   ],
   skills: [
     'React',
     'TypeScript',
+    'JavaScript',
     'Node.js',
+    'Express.js',
+    'Next.js',
+    'Vite',
+    'Tailwind CSS',
     'PostgreSQL',
+    'MongoDB',
+    'Supabase',
+    'Prisma',
+    'Firebase',
     'Full-Stack Development',
-    'AWS',
-    'Performance Optimization',
-    'SEO',
-    'Social Media Marketing',
-    'Content Strategy',
-    'Conversion Rate Optimization',
-    'Email Marketing',
-    'Analytics & Tracking',
+    'REST APIs',
     'Technical SEO',
-    'Graphic Design',
+    'Local SEO',
+    'GEO',
+    'Structured Data',
+    'Core Web Vitals',
+    'AI Engineering',
+    'Prompt Engineering',
+    'OpenAI API',
+    'LangChain',
+    'Digital Marketing',
+    'Social Media Marketing',
+    'Paid Advertising',
+    'Email Marketing',
+    'Conversion Rate Optimization',
+    'Google Analytics 4',
+    'Google Search Console',
+    'WordPress',
+    'Performance Optimization',
   ],
   projects: [
     {
@@ -257,23 +325,49 @@ export const siteContent: SiteContent = {
   ],
   faqs: [
     {
+      question: 'Who is Augustine Twumasi?',
+      answer:
+        'Augustine Twumasi is a Full-Stack Software Developer, Technical SEO Specialist, Digital Marketing Strategist, AI Engineer, and Technology Consultant. He helps businesses grow through software engineering, SEO, content strategy, and digital marketing.',
+    },
+    {
+      question: 'What services do you provide?',
+      answer:
+        'Full-stack web development, technical SEO, local SEO, SEO audits, content strategy, digital marketing consulting, social media strategy, paid advertising, AI consulting, WordPress development, analytics implementation, and performance optimization.',
+    },
+    {
       question: 'Who do you work with?',
       answer:
-        'I work with businesses, entrepreneurs, freelancers, creators, and individuals who need stronger digital marketing performance and lead consistency. From SMEs to personal brands, I help clients achieve measurable growth.',
+        'Business owners, startup founders, entrepreneurs, marketing managers, SEO teams, digital agencies, product managers, software companies, recruiters, content creators, and developers across startups, SMBs, and enterprise organizations.',
     },
     {
       question: 'Do you provide full web development projects?',
       answer:
-        'Yes! I build full-stack web applications, SaaS platforms, e-commerce sites, and custom software solutions. My development work includes React/TypeScript frontends, Node.js backends, database design, and AWS deployment. I also offer growth marketing services—and many clients hire me for both. Whether you need development only, marketing only, or an integrated approach, I can help.',
+        'Yes. I build full-stack web applications, SaaS platforms, e-commerce sites, landing pages, and custom software. Development includes React/TypeScript frontends, Node.js backends, database design, and deployment — with SEO and performance built in from day one.',
+    },
+    {
+      question: 'Which technologies do you use?',
+      answer:
+        'HTML, CSS, JavaScript, TypeScript, React, Vite, Next.js, Node.js, Express.js, Prisma, Supabase, PostgreSQL, MongoDB, Firebase, Tailwind CSS, and deployment on Vercel, Netlify, and Cloudflare Pages.',
+    },
+    {
+      question: 'Which AI platforms do you work with?',
+      answer:
+        'ChatGPT, Claude, Gemini, GitHub Copilot, Microsoft Copilot, Perplexity, OpenAI API, Anthropic API, and LangChain for AI agents, RAG systems, and automation workflows.',
     },
     {
       question: 'How fast can we start seeing impact?',
       answer:
-        'Most clients begin with quick-win SEO and funnel improvements in the first 2-3 weeks, then scale based on results.',
+        'Most clients begin with quick-win SEO and funnel improvements in the first 2–3 weeks, then scale based on results. Development timelines depend on project scope.',
     },
     {
       question: 'Can we start with an SEO audit first?',
-      answer: 'Yes. The free SEO audit is designed as the best first step before any larger engagement.',
+      answer:
+        'Yes. The free SEO audit is designed as the best first step before any larger engagement. It identifies technical gaps, ranking opportunities, and priority fixes.',
+    },
+    {
+      question: 'Are you available for professional work?',
+      answer:
+        'Yes. Available for freelance projects, technical consulting, SEO consulting, AI consulting, digital marketing consulting, contract work, full-time employment, technical mentoring, public speaking, and workshops.',
     },
   ],
   stats: [
@@ -286,6 +380,43 @@ export const siteContent: SiteContent = {
     { name: 'WhizzyInnovation', imageUrl: 'https://ui-avatars.com/api/?name=Whizzy+Innovation&background=f59e0b&color=fff&size=120&bold=true' },
   ],
   blogPosts: [
+    {
+      id: 'geo-llms-txt',
+      title: 'Generative Engine Optimization: Why llms.txt Matters in 2026',
+      excerpt:
+        'How to structure your website for AI-powered search engines — ChatGPT, Claude, Gemini, and Perplexity — with llms.txt and entity-first content.',
+      category: 'SEO',
+      readTime: 9,
+      publishDate: '2026-06-15',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=450&fit=crop&auto=format&q=80',
+      tags: ['GEO', 'llms.txt', 'AI SEO'],
+      featured: true,
+      externalUrl: 'https://medium.com/@augustinetwumasi/geo-llms-txt-2026',
+    },
+    {
+      id: 'ai-agents-workflow',
+      title: 'Building AI Agent Workflows with LangChain and OpenAI',
+      excerpt:
+        'Practical guide to creating AI agents, RAG pipelines, and automation workflows for development and marketing teams.',
+      category: 'Artificial Intelligence',
+      readTime: 11,
+      publishDate: '2026-06-08',
+      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=450&fit=crop&auto=format&q=80',
+      tags: ['AI Agents', 'LangChain', 'OpenAI'],
+      externalUrl: 'https://dev.to/augustinetwumasi/ai-agents-langchain',
+    },
+    {
+      id: 'technical-seo-checklist',
+      title: 'Technical SEO Checklist: 25 Items Every Developer Should Know',
+      excerpt:
+        'A developer-focused technical SEO checklist covering crawlability, structured data, Core Web Vitals, and JavaScript SEO.',
+      category: 'SEO',
+      readTime: 8,
+      publishDate: '2026-05-20',
+      image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&h=450&fit=crop&auto=format&q=80',
+      tags: ['Technical SEO', 'Core Web Vitals', 'Structured Data'],
+      externalUrl: 'https://medium.com/@augustinetwumasi/technical-seo-checklist',
+    },
     {
       id: 'seo-mistakes-2026',
       title: '5 SEO Mistakes Costing SMEs Thousands in Lost Revenue',

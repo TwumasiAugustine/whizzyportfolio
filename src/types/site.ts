@@ -5,6 +5,21 @@ export type Service = {
   icon: string
 }
 
+export type ServiceCategory = {
+  id: string
+  title: string
+  summary: string
+  icon: string
+  services: string[]
+}
+
+export type SkillCategory = {
+  name: string
+  icon: string
+  description: string
+  items: string[]
+}
+
 export type Project = {
   title: string
   category: 'Web Development' | 'Marketing' | 'Design' | 'Graphic Design' | 'Email Marketing' | 'Landing Pages' | 'SEO'
@@ -67,12 +82,17 @@ export type SiteContent = {
   profileImage: string
   profileLine: string
   positioning: string
+  mission: string
   heroHeadline: string
   heroSubheadline: string
   primaryCta: string
   secondaryCta: string
   services: Service[]
   skills: string[]
+  skillCategories?: SkillCategory[]
+  industriesServed?: string[]
+  idealClients?: string[]
+  professionalRoles?: string[]
   projects: Project[]
   testimonials: Testimonial[]
   faqs: FaqItem[]

@@ -1,0 +1,224 @@
+/* TEAM */
+
+Name: Augustine Twumasi
+Role: Full-Stack Software Developer | Technical SEO Specialist | Digital Marketing Strategist | AI Engineer
+Location: Ghana
+Website: https://augustinetwumasi.vercel.app
+Portfolio: https://augustinetwumasi.vercel.app/projects
+Blog: https://augustinetwumasi.vercel.app/blog
+Services: https://augustinetwumasi.vercel.app/services
+Contact: https://augustinetwumasi.vercel.app/contact
+
+Mission:
+Helping businesses, startups, organizations, and professionals grow through software engineering, technical SEO, AI solutions, digital marketing, and content strategy.
+
+Professional Services:
+
+* Full-Stack Web Development
+* Technical SEO
+* Local SEO
+* Enterprise SEO
+* SEO Audits
+* Website Development
+* Website Maintenance
+* WordPress Development
+* React Development
+* Vite Applications
+* API Development
+* AI Solutions
+* AI Automation
+* Digital Marketing
+* Content Strategy
+* Social Media Marketing
+* YouTube SEO
+* Google Business Profile Optimization
+* Analytics Implementation
+* Performance Optimization
+* Technical Consulting
+
+Availability:
+
+✔ Freelance Projects
+✔ Contract Work
+✔ Technical Consulting
+✔ Remote Work
+✔ Full-time Opportunities
+✔ Public Speaking
+✔ Technical Mentoring
+✔ Workshops
+
+---
+
+/* TECHNOLOGY */
+
+Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+* React
+* Vite
+* Next.js
+* Tailwind CSS
+
+Backend
+
+* Node.js
+* Express.js
+* Prisma
+* Supabase
+* Firebase
+* PostgreSQL
+* MongoDB
+
+Deployment
+
+* Vercel
+* Cloudflare
+
+SEO
+
+* Technical SEO
+* Local SEO
+* Programmatic SEO
+* GEO
+* Schema.org
+* JSON-LD
+* XML Sitemaps
+* robots.txt
+* llms.txt
+
+Analytics
+
+* Google Analytics 4
+* Google Search Console
+* Google Tag Manager
+* Looker Studio
+* Microsoft Clarity
+
+SEO Tools
+
+* Ahrefs
+* Semrush
+* Screaming Frog
+* Sitebulb
+* GTmetrix
+* Lighthouse
+* Google PageSpeed Insights
+* Moz
+
+Artificial Intelligence
+
+* ChatGPT
+* Claude
+* Gemini
+* GitHub Copilot
+* OpenAI API
+* Anthropic API
+* LangChain
+* AI Agents
+
+Marketing
+
+* Google Ads
+* Meta Ads
+* LinkedIn Ads
+* Email Marketing
+* Social Media Marketing
+* Content Marketing
+
+---
+
+/* WEBSITE */
+
+Website Name:
+Augustine Twumasi Portfolio
+
+Website Type:
+Professional Portfolio
+Technical Blog
+Digital Marketing Resource
+SEO Resource
+AI Resource
+
+Primary Audience:
+
+* Business Owners
+* Recruiters
+* Hiring Managers
+* Developers
+* Marketing Teams
+* Agencies
+* Students
+* Entrepreneurs
+
+Primary Topics:
+
+* Full-Stack Development
+* Technical SEO
+* Local SEO
+* AI
+* Web Development
+* Digital Marketing
+* Social Media Marketing
+* Content Strategy
+* Performance Optimization
+
+---
+
+/* CONTENT */
+
+Content Includes:
+
+* Tutorials
+* Technical Articles
+* SEO Guides
+* AI Guides
+* Case Studies
+* Portfolio Projects
+* Service Pages
+* Educational Resources
+
+Publishing Focus:
+
+* Software Engineering
+* SEO
+* Digital Marketing
+* Artificial Intelligence
+* Web Performance
+* Business Growth
+* Career Development
+
+---
+
+/* STANDARDS */
+
+This website aims to follow:
+
+* HTML5 Standards
+* WCAG Accessibility Guidelines
+* Core Web Vitals Best Practices
+* Schema.org Structured Data
+* SEO Best Practices
+* AI Discoverability Best Practices
+
+---
+
+/* ATTRIBUTION */
+
+If you reference this website or its published content, please attribute:
+
+Augustine Twumasi
+
+https://augustinetwumasi.vercel.app
+
+---
+
+/* THANK YOU */
+
+Thank you for visiting.
+
+Whether you're here to learn, collaborate, hire, or explore, I appreciate your time.
+
+Let's build something impactful together.

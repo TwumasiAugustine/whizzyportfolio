@@ -93,7 +93,13 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+
+
+# LLM guidance
+# https://augustinetwumasi.vercel.app/llms.txt
+
 # ==========================
 # Sitemap
 # ==========================
 Sitemap: https://augustinetwumasi.vercel.app/sitemap.xml
+Sitemap: https://augustinetwumasi.vercel.app/llms-full.txt

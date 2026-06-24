@@ -1,0 +1,104 @@
+# security.txt
+
+# RFC 9116
+
+# https://securitytxt.org/
+
+Contact: https://augustinetwumasi.vercel.app/contact
+
+Contact: mailto:twumasiaugustine007@gmail.com
+
+Preferred-Languages: en
+
+Canonical: https://augustinetwumasi.vercel.app/.well-known/security.txt
+
+Policy: https://augustinetwumasi.vercel.app/security
+
+Hiring: https://augustinetwumasi.vercel.app/careers
+
+Acknowledgments: https://augustinetwumasi.vercel.app/security#acknowledgments
+
+Expires: 2027-06-24T23:59:59.000Z
+
+Encryption:
+
+CSAF:
+
+Extension:
+
+Origin: https://augustinetwumasi.vercel.app
+
+Website: https://augustinetwumasi.vercel.app
+
+Author: Augustine Twumasi
+
+Company: Augustine Twumasi Portfolio
+
+Project: Portfolio Website
+
+Project-Type: Personal Portfolio
+
+Supported-Versions:
+
+* Production
+
+Security-Contact:
+
+Please report responsibly.
+
+Include:
+
+* URL affected
+* Steps to reproduce
+* Expected behavior
+* Actual behavior
+* Browser and version
+* Screenshots (if available)
+* Proof of Concept (if applicable)
+
+Response Goals:
+
+Critical Issues:
+Within 24 hours
+
+High Severity:
+Within 48 hours
+
+Medium Severity:
+Within 5 business days
+
+Low Severity:
+Within 10 business days
+
+Responsible Disclosure:
+
+Please do not publicly disclose security vulnerabilities until sufficient time has been provided to investigate and remediate the issue.
+
+Testing Guidelines:
+
+Allowed:
+
+* Responsible vulnerability research
+* Security scanning at a reasonable rate
+* Reporting vulnerabilities privately
+* Authentication testing on your own account
+
+Not Allowed:
+
+* Denial-of-Service (DoS)
+* Distributed Denial-of-Service (DDoS)
+* Spam
+* Social engineering
+* Phishing
+* Physical attacks
+* Data destruction
+* Data theft
+* Malware
+* Ransomware
+* Automated attacks causing service disruption
+
+Safe Harbor:
+
+Security researchers acting in good faith and following this policy will not be subject to legal action for their research.
+
+Thank you for helping improve the security of this website.

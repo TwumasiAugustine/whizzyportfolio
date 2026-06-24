@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub, FaDownload } from 'react-icons/fa6'
 import { InfiniteCarousel } from '../components/InfiniteCarousel'
 import { trackEvent } from '../lib/analytics'
@@ -55,7 +56,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             })}
           </div>
           <a
-            href="/projects/resume.pdf"
+            href="/projects/Augustine_Twumasi_Resume.pdf"
             download="Augustine_Twumasi_Resume.pdf"
             className="btn btn-primary btn-sm hero-resume-btn"
             onClick={handleResumeDownload}
@@ -80,12 +81,12 @@ export function HeroSection({ content }: HeroSectionProps) {
               <span /> Available for consulting
             </p>
             <div className="hero-cta-group">
-              <a className="btn btn-primary" href="#booking">
+              <Link className="btn btn-primary" to="/contact#booking">
                 {content.primaryCta}
-              </a>
-              <a className="btn btn-secondary" href="#insights">
+              </Link>
+              <Link className="btn btn-secondary" to={{ pathname: '/', hash: '#insights' }}>
                 {content.secondaryCta}
-              </a>
+              </Link>
             </div>
           </motion.article>
 

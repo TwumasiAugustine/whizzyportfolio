@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { FaSearch, FaChartLine, FaBullseye, FaCode, FaRocket, FaChartBar } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle'
 import { TrustBadges } from '../components/TrustBadges'
@@ -6,6 +7,7 @@ import type { SiteContent } from '../types/site'
 
 type ServicesSectionProps = {
   content: SiteContent
+  compact?: boolean
 }
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -37,13 +39,14 @@ const cardVariants = {
   },
 }
 
-export function ServicesSection({ content }: ServicesSectionProps) {
+export function ServicesSection({ content, compact = false }: ServicesSectionProps) {
+  const services = compact ? content.services.slice(0, 6) : content.services
   return (
     <section id="services" className="section-shell" aria-labelledby="services-title">
       <SectionTitle
         eyebrow="Services"
-        title="Full-Stack Development & Growth Marketing Solutions"
-        blurb="From building high-performance web applications to scaling them with strategic marketing—I deliver technical excellence and growth results."
+        title="Software, SEO, AI & Digital Marketing"
+        blurb="From building high-performance web applications to scaling them with technical SEO, GEO, and strategic marketing."
       />
       <motion.div
         className="service-grid"
@@ -52,7 +55,7 @@ export function ServicesSection({ content }: ServicesSectionProps) {
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
       >
-        {content.services.map((service) => {
+        {services.map((service) => {
           const IconComponent = iconMap[service.icon]
           return (
             <motion.article key={service.title} className="service-card" variants={cardVariants}>
@@ -72,6 +75,12 @@ export function ServicesSection({ content }: ServicesSectionProps) {
           )
         })}
       </motion.div>
+
+      {compact && (
+        <p className="section-view-all">
+          <Link to="/services">View all services →</Link>
+        </p>
+      )}
       
       <TrustBadges />
     </section>

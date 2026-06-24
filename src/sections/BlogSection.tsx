@@ -1,10 +1,13 @@
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { Link } from 'react-router-dom'
 import { SectionTitle } from '../components/SectionTitle'
 import type { SiteContent } from '../types/site'
 
 type BlogSectionProps = {
   content: SiteContent
+  limit?: number
+  showViewAll?: boolean
 }
 
 const cardVariants = {
@@ -19,7 +22,7 @@ const cardVariants = {
   }),
 }
 
-export function BlogSection({ content }: BlogSectionProps) {
+export function BlogSection({ content, limit, showViewAll = false }: BlogSectionProps) {
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const blogPosts = useMemo(() => content.blogPosts || [], [content.blogPosts])
@@ -31,11 +34,15 @@ export function BlogSection({ content }: BlogSectionProps) {
   }, [blogPosts])
 
   const visiblePosts = useMemo(() => {
-    if (selectedCategory === 'All') {
-      return blogPosts
+    let posts = blogPosts
+    if (selectedCategory !== 'All') {
+      posts = posts.filter((post) => post.category === selectedCategory)
     }
-    return blogPosts.filter((post) => post.category === selectedCategory)
-  }, [blogPosts, selectedCategory])
+    if (limit) {
+      posts = posts.slice(0, limit)
+    }
+    return posts
+  }, [blogPosts, selectedCategory, limit])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -141,6 +148,12 @@ export function BlogSection({ content }: BlogSectionProps) {
         <div className="empty-state">
           <p>No articles found in this category.</p>
         </div>
+      )}
+
+      {showViewAll && (
+        <p className="section-view-all">
+          <Link to="/blog">View all articles →</Link>
+        </p>
       )}
     </section>
   )
