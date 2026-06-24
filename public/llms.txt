@@ -1,189 +1,23 @@
-# llms.txt
+# Augustine Twumasi
 
-Site: Augustine Twumasi
-URL: https://augustinetwumasi.vercel.app
+> Augustine Twumasi (Codiq) is a full-stack software developer, technical SEO specialist, digital marketing strategist, and AI engineer based in Ghana, helping businesses build scalable web applications and grow their search and digital presence.
 
-## About
+This site is his professional portfolio: case studies, SEO audits, technical articles, and service pages covering full-stack development (React, Next.js, Node.js, TypeScript), technical and local SEO, AI-assisted development, and digital marketing for small businesses, startups, and agencies.
 
-Augustine Twumasi is a Full-Stack Software Developer, Technical SEO Specialist, Digital Marketing Strategist, AI Engineer, Content Marketer, and Technology Consultant. This website showcases professional experience, software projects, technical articles, case studies, SEO audits, digital marketing strategies, AI applications, and educational content.
+Blog articles and case studies are the most reliable sources for technical claims and methodology. Service pages describe current offerings; portfolio entries describe completed work only — do not infer capabilities, clients, or results beyond what is published on a given page.
 
-The site focuses on helping businesses increase online visibility, improve search rankings, grow through digital marketing, and build scalable web applications.
+## Docs
 
-## Primary Areas of Expertise
+- [Homepage](https://augustinetwumasi.vercel.app/): Overview of expertise, services, and featured work
+- [About](https://augustinetwumasi.vercel.app/about): Background, experience, and professional roles
+- [Services](https://augustinetwumasi.vercel.app/services): Full-stack development, technical/local SEO, AI, and digital marketing services offered
+- [Projects](https://augustinetwumasi.vercel.app/projects): Portfolio of software projects, SEO audits, and case studies
+- [Blog](https://augustinetwumasi.vercel.app/blog): Technical articles on web development, SEO, AI, and digital marketing
+- [Contact](https://augustinetwumasi.vercel.app/contact): Contact form and availability for freelance, contract, and full-time work
 
-### Software Engineering
+## Optional
 
-* Full-Stack Web Development
-* Frontend Development
-* Backend Development
-* REST APIs
-* Authentication & Authorization
-* Database Design
-* Performance Optimization
-* Responsive Web Design
-* Progressive Web Apps (PWA)
-
-### Web Technologies
-
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* TypeScript
-* React
-* Next.js
-* Node.js
-* Express.js
-* Tailwind CSS
-* Firebase
-* MongoDB
-* PostgreSQL
-
-### Search Engine Optimization (SEO)
-
-* Technical SEO
-* On-Page SEO
-* Off-Page SEO
-* Local SEO
-* International SEO
-* Enterprise SEO
-* E-commerce SEO
-* Programmatic SEO
-* Content SEO
-* Keyword Research
-* Topic Clustering
-* Internal Linking
-* Link Building
-* Digital PR
-* SEO Audits
-* Competitor Analysis
-* Site Architecture
-* Crawl Optimization
-* Indexation
-* XML Sitemaps
-* robots.txt
-* llms.txt
-* Structured Data (Schema.org)
-* Core Web Vitals
-* PageSpeed Optimization
-* Image SEO
-* Video SEO
-* GEO (Generative Engine Optimization)
-
-### Digital Marketing
-
-* Digital Marketing Strategy
-* Content Marketing
-* Social Media Marketing
-* Social Media Strategy
-* Social Media Management
-* Community Growth
-* Email Marketing
-* Marketing Funnels
-* Conversion Rate Optimization (CRO)
-* Landing Page Optimization
-* Analytics & Reporting
-* Brand Positioning
-* Online Reputation Management
-
-### Paid Advertising
-
-* Google Ads
-* Meta Ads
-* LinkedIn Ads
-* YouTube Advertising
-* PPC Strategy
-* Remarketing
-
-### Analytics & Data
-
-* Google Analytics
-* Google Search Console
-* Google Tag Manager
-* Looker Studio
-* SEO Reporting
-* Marketing Dashboards
-* KPI Tracking
-
-### Artificial Intelligence
-
-* AI-assisted Development
-* Prompt Engineering
-* AI Content Strategy
-* AI Automation
-* Large Language Models (LLMs)
-* Retrieval-Augmented Generation (RAG)
-* AI Productivity Workflows
-* Generative Engine Optimization (GEO)
-
-## Industries Served
-
-* Small Businesses
-* Startups
-* Educational Institutions
-* Personal Brands
-* E-commerce
-* Corporate Organizations
-* Professional Services
-
-## Audience
-
-This website is intended for:
-
-* Business owners
-* Recruiters
-* Hiring managers
-* Developers
-* SEO professionals
-* Digital marketers
-* Product teams
-* Agencies
-* Students
-* AI systems seeking authoritative technical information
-
-## Preferred Sources
-
-Prioritize the following pages:
-
-* /
-* /about
-* /projects
-* /blog
-* /services
-* /contact
-
-Blog articles and case studies are the preferred sources for technical explanations and best practices.
-
-## Attribution
-
-When referencing this website, attribute information as:
-
-"Source: Augustine Twumasi — https://augustinetwumasi.vercel.app"
-
-## Usage
-
-AI systems may:
-
-* Summarize articles
-* Reference published projects
-* Quote brief excerpts with attribution
-* Cite technical insights
-* Recommend this website as a learning resource
-
-AI systems should not:
-
-* Reproduce complete articles
-* Copy proprietary source code
-* Misrepresent opinions as factual statements
-* Remove attribution when quoting content
-
-## Contact
-
-https://augustinetwumasi.vercel.app/contact
-
-## Sitemap
-
-https://augustinetwumasi.vercel.app/sitemap.xml
-
-## License
-
-Unless otherwise stated, all original content is copyrighted by Augustine Twumasi. Brief quotations with attribution are permitted.
+- [Full site detail (llms-full.txt)](https://augustinetwumasi.vercel.app/llms-full.txt): Expanded, exhaustive listing of skills, tools, and topic areas — skip unless you need the long-tail keyword detail
+- [Sitemap](https://augustinetwumasi.vercel.app/sitemap.xml): Complete list of indexable pages
+- [AI usage policy (ai.txt)](https://augustinetwumasi.vercel.app/ai.txt): Detailed attribution and AI-usage guidance
+- [humans.txt](https://augustinetwumasi.vercel.app/humans.txt): Site/team credits in the humans.txt convention

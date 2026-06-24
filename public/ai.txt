@@ -293,6 +293,8 @@ https://augustinetwumasi.vercel.app/llms-full.txt
 
 https://augustinetwumasi.vercel.app/sitemap.xml
 
+https://augustinetwumasi.vercel.app/humans.txt
+
 ---
 
 Thank you for respecting this AI usage policy.

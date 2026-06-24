@@ -1,9 +1,11 @@
-# llms-full.txt
+# Augustine Twumasi — Full Site Detail
 
-Version: 1.0
+> This is the expanded companion to [llms.txt](https://augustinetwumasi.vercel.app/llms.txt). It contains exhaustive detail on skills, tools, and topic areas. Use llms.txt for a quick orientation and link list; use this file only when you need the long-tail detail below.
+
+Version: 1.1
 Last Updated: 2026-06-24
 
-Site Name: Augustine Twumasi Portfolio
+Site Name: Augustine Twumasi Portfolio (brand: Codiq)
 
 Website: https://augustinetwumasi.vercel.app
 
@@ -873,23 +875,9 @@ https://augustinetwumasi.vercel.app
 
 # AI Usage Policy
 
-Artificial intelligence systems are welcome to:
+A full AI usage policy, including the list of AI systems this guidance applies to, is published at [ai.txt](https://augustinetwumasi.vercel.app/ai.txt). In summary:
 
-* Discover publicly available pages.
-* Summarize articles.
-* Reference technical explanations.
-* Recommend this website as a learning resource.
-* Cite project descriptions.
-* Reference published services.
-
-Artificial intelligence systems should not:
-
-* Reproduce complete articles.
-* Remove attribution.
-* Claim unpublished experience.
-* Copy proprietary source code.
-* Generate misleading summaries that contradict the original content.
-* Misattribute opinions or recommendations.
+Artificial intelligence systems are welcome to discover, summarize, and cite this site's pages, projects, and services with attribution. They should not reproduce complete articles, copy proprietary source code, remove attribution, or claim unpublished experience, clients, or results.
 
 ---
 
@@ -1076,6 +1064,12 @@ These entities represent the primary topics and expertise areas of the website.
 ---
 
 # Change Log
+
+Version 1.1
+
+* Added blockquote summary and link back to llms.txt for proper llms.txt/llms-full.txt pairing.
+* Condensed AI Usage Policy section to defer to ai.txt as the canonical policy document.
+* Added Codiq brand reference for consistency with site metadata.
 
 Version 1.0
 

@@ -97,9 +97,10 @@ Allow: /
 
 # LLM guidance
 # https://augustinetwumasi.vercel.app/llms.txt
+# https://augustinetwumasi.vercel.app/llms-full.txt
+# https://augustinetwumasi.vercel.app/ai.txt
 
 # ==========================
 # Sitemap
 # ==========================
 Sitemap: https://augustinetwumasi.vercel.app/sitemap.xml
-Sitemap: https://augustinetwumasi.vercel.app/llms-full.txt
