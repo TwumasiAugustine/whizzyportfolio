@@ -90,6 +90,21 @@ export const pageMeta: Record<string, PageMeta> = {
     path: '/contact',
     ogType: 'website',
   },
+   privacyPolicy: {
+    title: 'Privacy Policy | Augustine Twumasi',
+   description:
+      'Privacy policy for augustinetwumasi.vercel.app, explaining what information is collected from visitors of Augustine Twumasi\'s portfolio website, how it is used, and your rights.',
+    path: '/privacy-policy',
+    ogType: 'website',
+  },
+
+ termsAndConditions: {
+    title: 'Terms & Conditions | Augustine Twumasi',
+    description:
+     'Terms and conditions governing the use of augustinetwumasi.vercel.app, the portfolio website of Augustine Twumasi, full stack developer in Kumasi, Ghana.',
+    path: '/terms-and-conditions',
+    ogType: 'website',
+  },
 
   notFound: {
     title: 'Page Not Found | Augustine Twumasi',

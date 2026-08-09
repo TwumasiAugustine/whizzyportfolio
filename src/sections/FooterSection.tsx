@@ -94,6 +94,10 @@ export function FooterSection({ content }: FooterSectionProps) {
           © {currentYear} {content.personName} · {content.location.city}, {content.location.country}. Made with{' '}
           <FaHeart className="footer-heart" /> for growth-focused clients.
         </p>
+            <nav className="footer-legal" aria-label="Legal">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+        <Link to="/terms-and-conditions">Terms & Conditions</Link>
+       </nav>
       </div>
     </footer>
   )

@@ -14,6 +14,8 @@ Blog articles and case studies are the most reliable sources for technical claim
 - [Projects](https://augustinetwumasi.vercel.app/projects): Portfolio of software projects, SEO audits, and case studies
 - [Blog](https://augustinetwumasi.vercel.app/blog): Technical articles on web development, SEO, AI, and digital marketing
 - [Contact](https://augustinetwumasi.vercel.app/contact): Contact form and availability for freelance, contract, and full-time work
+- [Privacy Policy] (https://augustinetwumasi.vercel.app/privacy-policy): Privacy policy
+- [Terms And Conditions] (https://augustinetwumasi.vercel.app/terms-and-conditions): Terms and conditions
 
 ## Optional
 

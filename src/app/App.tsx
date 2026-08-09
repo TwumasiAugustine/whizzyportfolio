@@ -8,6 +8,8 @@ import { BlogPage } from '../pages/BlogPage'
 import { ContactPage } from '../pages/ContactPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { ServicePageRoute } from '../pages/ServicePageRoute'
+import { PrivacyPolicyPage } from '../pages/PrivacyPolicyPage'
+import { TermsAndConditionsPage } from '../pages/TermsAndConditionsPage'
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
               </main>
             }
           />
+          <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
