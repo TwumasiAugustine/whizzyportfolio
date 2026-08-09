@@ -22,7 +22,8 @@ export function FooterSection({ content }: FooterSectionProps) {
         <div className="footer-brand">
           <p className="footer-logo">{content.brandName}</p>
           <p className="footer-tagline">
-            Full-stack development, SEO, AI & digital marketing that drives measurable growth.
+            Full stack developer, SEO specialist & AI engineer in {content.location.city}, {content.location.country}.
+            {content.location.serviceArea}.
           </p>
         </div>
 
@@ -34,6 +35,13 @@ export function FooterSection({ content }: FooterSectionProps) {
             <Link to="/services">Services</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/blog">Blog</Link>
+          </div>
+          <div className="footer-nav-group">
+            <p className="footer-nav-heading">Services</p>
+            <Link to="/web-development">Web Development</Link>
+            <Link to="/seo">SEO Services</Link>
+            <Link to="/ai-automation">AI Automation</Link>
+            <Link to="/digital-marketing">Digital Marketing</Link>
           </div>
           <div className="footer-nav-group">
             <p className="footer-nav-heading">Connect</p>
@@ -83,7 +91,8 @@ export function FooterSection({ content }: FooterSectionProps) {
 
       <div className="footer-bottom">
         <p>
-          © {currentYear} {content.personName}. Made with <FaHeart className="footer-heart" /> for growth-focused clients.
+          © {currentYear} {content.personName} · {content.location.city}, {content.location.country}. Made with{' '}
+          <FaHeart className="footer-heart" /> for growth-focused clients.
         </p>
       </div>
     </footer>

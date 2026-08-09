@@ -126,4 +126,10 @@ export type SiteContent = {
     icon: string
     recommended?: boolean
   }>
+  location: {
+    city: string
+    region: string
+    country: string
+    serviceArea: string
+  }
 }

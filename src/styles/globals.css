@@ -352,20 +352,16 @@ a {
   overflow: hidden;
   position: relative;
   width: 100%;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
 }
 
 .carousel-track {
@@ -582,7 +578,7 @@ textarea:focus-visible,
   margin-bottom: 0.65rem;
 }
 
-.service-card > p {
+.service-card>p {
   margin-bottom: 0.85rem;
   color: var(--muted);
   line-height: 1.65;
@@ -602,6 +598,45 @@ textarea:focus-visible,
   color: var(--accent-2);
   margin-right: 0.5rem;
   font-weight: 600;
+}
+
+.service-catalog-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem 1rem;
+}
+
+@media (max-width: 480px) {
+  .service-catalog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-catalog-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--accent, #f97316);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.service-catalog-toggle svg {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.service-catalog-toggle svg.is-flipped {
+  transform: rotate(180deg);
+}
+
+.service-catalog-toggle:hover {
+  text-decoration: underline;
 }
 
 .pill-list li,
@@ -624,11 +659,9 @@ textarea:focus-visible,
 }
 
 .skill-card {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.01) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.01) 100%);
   border: 1px solid var(--line);
   border-radius: 0.75rem;
   padding: 1.75rem 1.5rem;
@@ -644,23 +677,19 @@ textarea:focus-visible,
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    var(--accent) 0%,
-    var(--accent-2) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      var(--accent) 0%,
+      var(--accent-2) 50%,
+      transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .skill-card:hover {
   border-color: rgba(241, 111, 67, 0.3);
-  background: linear-gradient(
-    135deg,
-    rgba(241, 111, 67, 0.05) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(241, 111, 67, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 100%);
   transform: translateY(-2px);
 }
 
@@ -711,7 +740,7 @@ textarea:focus-visible,
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-  
+
   .skill-card {
     padding: 1.5rem 1.25rem;
   }
@@ -809,7 +838,7 @@ textarea:focus-visible,
   color: var(--muted);
 }
 
-.project-card p + p {
+.project-card p+p {
   margin-top: 0.6rem;
 }
 
@@ -1086,11 +1115,9 @@ textarea:focus-visible,
 }
 
 .stat-card {
-  background: linear-gradient(
-    135deg,
-    rgba(241, 111, 67, 0.04),
-    rgba(243, 180, 151, 0.02)
-  );
+  background: linear-gradient(135deg,
+      rgba(241, 111, 67, 0.04),
+      rgba(243, 180, 151, 0.02));
   border: 1px solid rgba(241, 111, 67, 0.15);
   border-radius: 1rem;
   text-align: center;
@@ -1132,12 +1159,10 @@ textarea:focus-visible,
   content: '';
   flex: 1;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--line),
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      var(--line),
+      transparent);
 }
 
 .proof-divider-text {
@@ -1216,11 +1241,9 @@ textarea:focus-visible,
 .insights-panel {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(
-    135deg,
-    rgba(241, 111, 67, 0.08),
-    rgba(243, 180, 151, 0.04)
-  );
+  background: linear-gradient(135deg,
+      rgba(241, 111, 67, 0.08),
+      rgba(243, 180, 151, 0.04));
   border: 1px solid rgba(241, 111, 67, 0.2);
   border-radius: 1.5rem;
   position: relative;
@@ -1231,15 +1254,13 @@ textarea:focus-visible,
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(241, 111, 67, 0.15),
-    transparent 60%
-  );
+  background: radial-gradient(circle at 50% 0%,
+      rgba(241, 111, 67, 0.15),
+      transparent 60%);
   pointer-events: none;
 }
 
-.insights-panel > * {
+.insights-panel>* {
   position: relative;
   z-index: 1;
 }
@@ -1637,12 +1658,16 @@ textarea:disabled {
 }
 
 @keyframes heartbeat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   25% {
     transform: scale(1.1);
   }
+
   50% {
     transform: scale(1);
   }
@@ -1919,6 +1944,7 @@ textarea:disabled {
 
 /* Tablet & Small Desktop (760px - 1023px) */
 @media (min-width: 760px) and (max-width: 1023px) {
+
   .site-header,
   .page-shell,
   .site-footer {
@@ -1975,6 +2001,7 @@ textarea:disabled {
 
 /* Desktop (1024px+) */
 @media (min-width: 760px) {
+
   .stats-grid,
   .about-grid,
   .service-grid,
@@ -2052,6 +2079,7 @@ textarea:disabled {
 }
 
 @media (min-width: 1024px) {
+
   .site-header,
   .page-shell,
   .site-footer {
@@ -2168,6 +2196,7 @@ textarea:disabled {
 
 /* Extra Large Screens (1280px+) */
 @media (min-width: 1280px) {
+
   .site-header,
   .page-shell,
   .site-footer {
@@ -2543,7 +2572,7 @@ textarea:disabled {
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .blog-card-footer {
     flex-direction: row;
     justify-content: space-between;
@@ -2723,11 +2752,11 @@ textarea:disabled {
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .certifications-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .certification-footer {
     flex-direction: row;
     justify-content: space-between;
@@ -2783,7 +2812,7 @@ textarea:disabled {
   margin-bottom: 0.5rem;
 }
 
-.resume-download-content > p {
+.resume-download-content>p {
   color: var(--muted);
   max-width: 55ch;
   margin: 0 auto 1.5rem;
@@ -2805,8 +2834,8 @@ textarea:disabled {
     text-align: left;
     padding: 2rem 2.5rem;
   }
-  
-  .resume-download-content > p {
+
+  .resume-download-content>p {
     margin: 0 0 1.5rem 0;
   }
 }
@@ -2892,6 +2921,7 @@ textarea:disabled {
    ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -2907,6 +2937,7 @@ textarea:disabled {
    ============================================ */
 
 @media print {
+
   .site-header,
   .mobile-menu-toggle,
   .mobile-menu-panel,
@@ -3593,4 +3624,3 @@ select:focus-visible {
 .footer-nav a:hover {
   color: var(--text);
 }
-

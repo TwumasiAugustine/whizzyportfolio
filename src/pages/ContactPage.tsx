@@ -30,9 +30,14 @@ export function ContactPage() {
         <section className="section-shell page-hero" aria-labelledby="contact-page-title">
           <SectionTitle
             eyebrow="Contact"
-            title="Let's Work Together"
-            blurb="Available for freelance projects, consulting, contract work, and full-time opportunities. Book a call or send a message."
+            title="Hire a Web Developer in Kumasi, Ghana"
+            blurb={`Contact Augustine Twumasi for web development, SEO consulting, AI automation, and digital marketing. Based in ${siteContent.location.city}, ${siteContent.location.region}, serving ${siteContent.location.country} and clients worldwide.`}
+            headingLevel="h1"
           />
+          <p className="page-intro">
+            Email:{' '}
+            <a href={`mailto:${siteContent.contact.email}`}>{siteContent.contact.email}</a>
+          </p>
         </section>
 
         <section className="section-shell" aria-labelledby="availability-title">

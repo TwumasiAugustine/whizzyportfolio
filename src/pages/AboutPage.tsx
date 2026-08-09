@@ -1,28 +1,40 @@
-import { lazy, Suspense } from 'react'
-import { Link } from 'react-router-dom'
-import { usePageMeta } from '../hooks/usePageMeta'
-import { pageMeta } from '../lib/seo'
-import { siteContent } from '../data/site-content'
-import { AboutSection } from '../sections/AboutSection'
-import { SkillsSection } from '../sections/SkillsSection'
-import { CertificationsSection } from '../sections/CertificationsSection'
-import { SectionTitle } from '../components/SectionTitle'
+import { lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
+import { usePageMeta } from "../hooks/usePageMeta";
+import { pageMeta } from "../lib/seo";
+import { siteContent } from "../data/site-content";
+import { AboutSection } from "../sections/AboutSection";
+import { SkillsSection } from "../sections/SkillsSection";
+import { CertificationsSection } from "../sections/CertificationsSection";
+import { SectionTitle } from "../components/SectionTitle";
 
-const FooterSection = lazy(() => import('../sections/FooterSection').then((m) => ({ default: m.FooterSection })))
+const FooterSection = lazy(() =>
+  import("../sections/FooterSection").then((m) => ({
+    default: m.FooterSection,
+  })),
+);
 
 export function AboutPage() {
-  usePageMeta(pageMeta.about)
+  usePageMeta(pageMeta.about);
 
   return (
     <>
       <main id="main-content" className="page-shell">
-        <section className="section-shell page-hero" aria-labelledby="about-page-title">
+        <section
+          className="section-shell page-hero"
+          aria-labelledby="about-page-title"
+        >
           <SectionTitle
             eyebrow="About"
-            title={siteContent.personName}
+            title={`${siteContent.personName} — Full Stack Developer in Kumasi, Ghana`}
             blurb={siteContent.positioning}
+            headingLevel="h1"
           />
           <p className="page-intro">{siteContent.mission}</p>
+          <p className="location-note">
+            {siteContent.location.serviceArea}. Profession: Full Stack Software Developer, AI Engineer, Technical SEO
+            Specialist, and Digital Marketing Strategist.
+          </p>
         </section>
 
         <AboutSection />
@@ -61,7 +73,10 @@ export function AboutPage() {
 
         <CertificationsSection content={siteContent} />
 
-        <section className="section-shell cta-banner" aria-label="Work together">
+        <section
+          className="section-shell cta-banner"
+          aria-label="Work together"
+        >
           <h2>Let's build something together</h2>
           <p>Explore my services or get in touch to discuss your project.</p>
           <div className="hero-cta-group">
@@ -74,9 +89,9 @@ export function AboutPage() {
           </div>
         </section>
       </main>
-      <Suspense fallback={<div style={{ minHeight: '300px' }} />}>
+      <Suspense fallback={<div style={{ minHeight: "300px" }} />}>
         <FooterSection content={siteContent} />
       </Suspense>
     </>
-  )
+  );
 }

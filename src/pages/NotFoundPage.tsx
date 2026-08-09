@@ -2,13 +2,11 @@ import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 import { FaHome, FaEnvelope } from 'react-icons/fa'
 import { usePageMeta } from '../hooks/usePageMeta'
+import { pageMeta } from '../lib/seo'
 
 export function NotFoundPage() {
-  usePageMeta({
-    title: 'Page Not Found | Augustine Twumasi',
-    description: 'The page you are looking for does not exist.',
-    path: '/404',
-  })
+  usePageMeta(pageMeta.notFound)
+
   return (
     <div className="not-found-page">
       <motion.div
@@ -25,6 +23,7 @@ export function NotFoundPage() {
         >
           404
         </motion.h1>
+
         <motion.h2
           className="not-found-subtitle"
           initial={{ opacity: 0 }}
@@ -33,6 +32,7 @@ export function NotFoundPage() {
         >
           Page Not Found
         </motion.h2>
+
         <motion.p
           className="not-found-message"
           initial={{ opacity: 0 }}
@@ -43,17 +43,25 @@ export function NotFoundPage() {
           <br />
           Let's get you back on track.
         </motion.p>
+
         <motion.div
           className="not-found-actions"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Link to="/" className="btn btn-primary">
+          <Link
+            to="/"
+            className="btn btn-primary"
+          >
             <FaHome style={{ marginRight: '0.5rem' }} />
             Back to Home
           </Link>
-          <Link to="/contact" className="btn btn-secondary">
+
+          <Link
+            to="/contact"
+            className="btn btn-secondary"
+          >
             <FaEnvelope style={{ marginRight: '0.5rem' }} />
             Contact Me
           </Link>

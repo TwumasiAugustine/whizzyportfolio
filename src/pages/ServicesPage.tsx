@@ -14,8 +14,9 @@ import {
   FaEnvelope,
   FaFunnelDollar,
   FaBrain,
+  FaChevronDown,
 } from 'react-icons/fa'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import { usePageMeta } from '../hooks/usePageMeta'
 import { pageMeta } from '../lib/seo'
 import { serviceCatalog } from '../data/service-catalog'
@@ -41,8 +42,15 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   FaBrain,
 }
 
+const COLLAPSED_COUNT = 8
+
 export function ServicesPage() {
   usePageMeta(pageMeta.services)
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+
+  const toggleExpanded = (id: string) => {
+    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }))
+  }
 
   return (
     <>
@@ -50,8 +58,9 @@ export function ServicesPage() {
         <section className="section-shell page-hero" aria-labelledby="services-page-title">
           <SectionTitle
             eyebrow="Services"
-            title="Software, SEO, AI & Digital Marketing Services"
-            blurb={siteContent.mission}
+            title="Web Development, SEO & AI Services in Kumasi, Ghana"
+            blurb={`${siteContent.location.serviceArea}.`}
+            headingLevel="h1"
           />
           <p className="page-intro">
             From full-stack development to technical SEO, GEO optimization, and AI consulting — I help businesses,
@@ -63,6 +72,12 @@ export function ServicesPage() {
           <div className="service-catalog-grid">
             {serviceCatalog.map((category, index) => {
               const IconComponent = iconMap[category.icon]
+              const isLong = category.services.length > COLLAPSED_COUNT
+              const isExpanded = expanded[category.id] ?? false
+              const visibleServices =
+                isLong && !isExpanded ? category.services.slice(0, COLLAPSED_COUNT) : category.services
+              const hiddenCount = category.services.length - COLLAPSED_COUNT
+
               return (
                 <motion.article
                   key={category.id}
@@ -81,10 +96,21 @@ export function ServicesPage() {
                   <h2>{category.title}</h2>
                   <p>{category.summary}</p>
                   <ul className="service-catalog-list">
-                    {category.services.map((item) => (
+                    {visibleServices.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
                   </ul>
+                  {isLong && (
+                    <button
+                      type="button"
+                      className="service-catalog-toggle"
+                      aria-expanded={isExpanded}
+                      onClick={() => toggleExpanded(category.id)}
+                    >
+                      {isExpanded ? 'Show less' : `+${hiddenCount} more`}
+                      <FaChevronDown className={isExpanded ? 'is-flipped' : ''} />
+                    </button>
+                  )}
                 </motion.article>
               )
             })}
@@ -95,7 +121,7 @@ export function ServicesPage() {
           <SectionTitle
             eyebrow="Industries"
             title="Industries Served"
-            blurb="Experience across startups, SMBs, enterprise, education, healthcare, e-commerce, and more."
+            blurb="Experience with Ghanaian startups, SMEs, schools, NGOs, and organizations across Kumasi and Ghana."
           />
           <ul className="tag-cloud" aria-label="Industries served">
             {(siteContent.industriesServed ?? []).map((industry) => (

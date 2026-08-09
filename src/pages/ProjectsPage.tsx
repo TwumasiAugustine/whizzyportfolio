@@ -19,6 +19,7 @@ export function ProjectsPage() {
             eyebrow="Portfolio"
             title="Projects & Case Studies"
             blurb="Full-stack web applications, SEO case studies, AI-powered apps, marketing websites, and performance optimization projects."
+            headingLevel="h1"
           />
         </section>
         <PortfolioSection content={siteContent} />

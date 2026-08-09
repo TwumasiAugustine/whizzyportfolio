@@ -4,16 +4,22 @@ export const siteContent: SiteContent = {
   personName: 'Augustine Twumasi',
   brandName: 'Codiq',
   profileImage: '/projects/profile_pic 2.png',
-  profileLine: 'Full-Stack Developer · Technical SEO Specialist · AI Engineer · Digital Marketing Strategist',
+  profileLine: 'Full Stack Developer · Technical SEO Specialist · AI Engineer · Kumasi, Ghana',
   positioning:
-    'I design, build, optimize, and scale websites, applications, and digital marketing systems that improve business visibility, user experience, and measurable growth.',
+    'Augustine Twumasi is a full stack developer, AI engineer, and technical SEO specialist based in Kumasi, Ghana, building modern digital solutions for businesses, organizations, and individuals in Ghana and beyond.',
   mission:
-    'To help businesses, startups, organizations, and professionals grow through software engineering, artificial intelligence, search engine optimization, content strategy, and digital marketing.',
-  heroHeadline: 'Build, Optimize & Scale — Software, SEO & AI That Drives Growth',
+    'To help Ghanaian businesses, startups, organizations, and professionals grow through software engineering, artificial intelligence, search engine optimization, content strategy, and digital marketing.',
+  heroHeadline: 'Full Stack Developer, AI Engineer & SEO Specialist in Ghana',
   heroSubheadline:
-    'Full-stack developer, technical SEO specialist, and AI engineer who builds high-performance web platforms — then scales them with search optimization, GEO, and data-driven marketing.',
-  primaryCta: 'Book a Strategy Call',
-  secondaryCta: 'Get Free SEO Audit',
+    'Augustine Twumasi is a full stack developer in Kumasi, Ghana who builds modern web applications with React, TypeScript, and Node.js and scales them with technical SEO, AI automation, and data-driven marketing. Serving clients across the Ashanti Region, Ghana, and worldwide.',
+  primaryCta: 'Discuss Your Project',
+  secondaryCta: 'Request an SEO Audit',
+  location: {
+    city: 'Kumasi',
+    region: 'Ashanti Region',
+    country: 'Ghana',
+    serviceArea: 'Serving Kumasi, Ghana, and worldwide',
+  },
   services: [
     {
       title: 'Full-Stack Web Development',
@@ -32,7 +38,7 @@ export const siteContent: SiteContent = {
     {
       title: 'Generative Engine Optimization (GEO)',
       summary:
-        'Optimize your site for AI-powered search — ChatGPT, Claude, Gemini, Perplexity, and AI Overviews. llms.txt, AI citation, and entity-first content.',
+        'Optimize your site for AI-powered search, ChatGPT, Claude, Gemini, Perplexity, and AI Overviews. llms.txt, AI citation, and entity-first content.',
       outcomes: ['llms.txt implementation', 'AI search visibility', 'AI content structuring', 'Entity-first strategy'],
       icon: 'FaRocket',
     },
@@ -76,26 +82,24 @@ export const siteContent: SiteContent = {
     'Website Consultant',
   ],
   industriesServed: [
-    'Startups',
-    'Small & Medium Businesses',
-    'Enterprise Organizations',
+    'Ghanaian Startups',
+    'SMEs in Kumasi & Ghana',
     'Educational Institutions',
-    'E-learning Platforms',
+    'Schools & E-learning',
+    'Churches & NGOs',
     'Personal Brands',
     'Digital Agencies',
     'SaaS Businesses',
     'E-commerce',
     'Healthcare Providers',
-    'Law Firms',
-    'Financial Services',
-    'Real Estate',
+    'Professional Services',
     'Hospitality & Restaurants',
-    'NGOs & Non-profits',
+    'Enterprise Organizations',
   ],
   idealClients: [
-    'Business Owners',
+    'Business Owners in Ghana',
     'Startup Founders',
-    'Entrepreneurs',
+    'Entrepreneurs in Kumasi',
     'Marketing Managers',
     'SEO Teams',
     'Digital Marketing Agencies',
@@ -146,8 +150,10 @@ export const siteContent: SiteContent = {
       title: 'School Management System',
       category: 'Web Development',
       image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=450&fit=crop&auto=format&q=80',
-      challenge: 'Educational institution needed centralized system for student records, attendance, grades, and communication. Required scalable architecture for 10,000+ users with real-time updates.',
-      result: 'Built full-stack SaaS platform serving 10,000+ active users. Achieved 98 Lighthouse performance score with sub-1s initial load. Reduced administrative overhead by 60% through automated workflows.',
+      challenge:
+        'An educational institution needed a centralized platform for student records, attendance, grades, and staff communication — with architecture that could scale to 10,000+ users and perform reliably on mobile networks common in Ghana.',
+      result:
+        'Delivered a full-stack SaaS platform serving 10,000+ active users with a 98 Lighthouse performance score and sub-1s initial load. Automated attendance, grading, and reporting workflows reduced administrative overhead by 60%.',
       tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
       techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'AWS EC2', 'Redis'],
       url: 'https://advanced-school-management-system.onrender.com/',
@@ -179,9 +185,11 @@ export const siteContent: SiteContent = {
       title: 'Local SEO Acceleration Campaign',
       category: 'SEO',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&auto=format&q=80',
-      challenge: 'Low search visibility and inconsistent inbound leads for a service business.',
-      result: 'Improved keyword positioning and stronger lead consistency through technical and on-page fixes.',
-      tags: ['SEO', 'Analytics', 'Content Strategy'],
+      challenge:
+        'A Ghana-based service business had low local search visibility in Google Maps and organic results, leading to inconsistent inbound leads from their target market.',
+      result:
+        'Conducted a technical SEO audit, fixed crawl and indexation issues, optimized Google Business Profile, and improved on-page content. Keyword positioning and lead consistency improved within eight weeks.',
+      tags: ['Local SEO', 'Technical SEO', 'Google Business Profile'],
       url: 'https://advanced-school-management-system.onrender.com/',
       demoUrl: 'https://advanced-school-management-system.onrender.com/',
     },
@@ -327,59 +335,72 @@ export const siteContent: SiteContent = {
     {
       question: 'Who is Augustine Twumasi?',
       answer:
-        'Augustine Twumasi is a Full-Stack Software Developer, Technical SEO Specialist, Digital Marketing Strategist, AI Engineer, and Technology Consultant. He helps businesses grow through software engineering, SEO, content strategy, and digital marketing.',
+        'Augustine Twumasi is a full stack software developer, technical SEO specialist, AI engineer, and digital marketing strategist based in Kumasi, Ashanti Region, Ghana. He builds web applications and helps businesses grow through search optimization and digital marketing.',
+    },
+    {
+      question: 'Do you work with clients in Kumasi and across Ghana?',
+      answer:
+        'Yes. I am based in Kumasi and work with businesses, startups, schools, NGOs, and professionals across Ghana. I also serve international clients remotely.',
     },
     {
       question: 'What services do you provide?',
       answer:
-        'Full-stack web development, technical SEO, local SEO, SEO audits, content strategy, digital marketing consulting, social media strategy, paid advertising, AI consulting, WordPress development, analytics implementation, and performance optimization.',
+        'Full stack web development, technical SEO, local SEO, SEO audits, AI consulting and automation, digital marketing, social media strategy, paid advertising, WordPress development, and performance optimization.',
     },
     {
-      question: 'Who do you work with?',
+      question: 'Can I hire you as a freelance web developer in Kumasi?',
       answer:
-        'Business owners, startup founders, entrepreneurs, marketing managers, SEO teams, digital agencies, product managers, software companies, recruiters, content creators, and developers across startups, SMBs, and enterprise organizations.',
+        'Yes. I am available for freelance web development projects in Kumasi and across Ghana — including business websites, custom web applications, SaaS platforms, and landing pages built with React, TypeScript, and Node.js.',
     },
     {
-      question: 'Do you provide full web development projects?',
+      question: 'Do you provide SEO audit services in Ghana?',
       answer:
-        'Yes. I build full-stack web applications, SaaS platforms, e-commerce sites, landing pages, and custom software. Development includes React/TypeScript frontends, Node.js backends, database design, and deployment — with SEO and performance built in from day one.',
+        'Yes. I offer technical SEO audits and local SEO consulting for Ghanaian businesses. Audits cover crawlability, Core Web Vitals, structured data, on-page optimization, and Google Business Profile improvements.',
     },
     {
       question: 'Which technologies do you use?',
       answer:
-        'HTML, CSS, JavaScript, TypeScript, React, Vite, Next.js, Node.js, Express.js, Prisma, Supabase, PostgreSQL, MongoDB, Firebase, Tailwind CSS, and deployment on Vercel, Netlify, and Cloudflare Pages.',
+        'React, TypeScript, JavaScript, Node.js, Express.js, Next.js, Vite, PostgreSQL, MongoDB, Supabase, Prisma, Firebase, and Tailwind CSS. Deployed on Vercel, Netlify, and AWS.',
     },
     {
       question: 'Which AI platforms do you work with?',
       answer:
-        'ChatGPT, Claude, Gemini, GitHub Copilot, Microsoft Copilot, Perplexity, OpenAI API, Anthropic API, and LangChain for AI agents, RAG systems, and automation workflows.',
-    },
-    {
-      question: 'How fast can we start seeing impact?',
-      answer:
-        'Most clients begin with quick-win SEO and funnel improvements in the first 2–3 weeks, then scale based on results. Development timelines depend on project scope.',
+        'OpenAI API, Anthropic API, LangChain, ChatGPT, Claude, Gemini, and GitHub Copilot for AI agents, RAG systems, prompt engineering, and automation workflows.',
     },
     {
       question: 'Can we start with an SEO audit first?',
       answer:
-        'Yes. The free SEO audit is designed as the best first step before any larger engagement. It identifies technical gaps, ranking opportunities, and priority fixes.',
+        'Yes. A free SEO audit is the recommended first step. It identifies technical gaps, local ranking opportunities, and priority fixes before any larger engagement.',
     },
     {
-      question: 'Are you available for professional work?',
+      question: 'Are you available for remote and international work?',
       answer:
-        'Yes. Available for freelance projects, technical consulting, SEO consulting, AI consulting, digital marketing consulting, contract work, full-time employment, technical mentoring, public speaking, and workshops.',
+        'Yes. While based in Kumasi, Ghana, I work with clients worldwide through remote collaboration. Available for freelance projects, contract work, consulting, and full-time opportunities.',
     },
   ],
   stats: [
-    { value: '10,000+', label: 'Active Platform Users' },
+    { value: '10,000+', label: 'Active Platform Users Built' },
     { value: '98', label: 'Average Lighthouse Score' },
-    { value: 'Global', label: 'Remote Development & Marketing' },
+    { value: 'Kumasi', label: 'Based in Ghana, Serving Worldwide' },
   ],
   clientLogos: [
     { name: 'KinaPharma', imageUrl: 'https://ui-avatars.com/api/?name=KinaPharma&background=06b6d4&color=fff&size=120&bold=true' },
     { name: 'WhizzyInnovation', imageUrl: 'https://ui-avatars.com/api/?name=Whizzy+Innovation&background=f59e0b&color=fff&size=120&bold=true' },
   ],
   blogPosts: [
+    {
+      id: 'local-seo-ghana',
+      title: 'Local SEO for Ghanaian Businesses: A Practical Guide',
+      excerpt:
+        'How businesses in Kumasi and across Ghana can improve Google Maps visibility, local citations, and organic search rankings with actionable local SEO steps.',
+      category: 'SEO',
+      readTime: 10,
+      publishDate: '2026-06-20',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&auto=format&q=80',
+      tags: ['Local SEO', 'Ghana', 'Google Business Profile'],
+      featured: true,
+      externalUrl: 'https://medium.com/@augustinetwumasi/local-seo-ghana-guide',
+    },
     {
       id: 'geo-llms-txt',
       title: 'Generative Engine Optimization: Why llms.txt Matters in 2026',

@@ -129,14 +129,15 @@ export function BlogSection({ content, limit, showViewAll = false }: BlogSection
                     ))}
                   </div>
                 </div>
-                <a 
+                <a
                   href={post.externalUrl || `#blog/${post.id}`}
-                  className="blog-read-more" 
+                  className="blog-read-more"
                   aria-label={`Read article: ${post.title}`}
                   target={post.externalUrl ? '_blank' : '_self'}
                   rel={post.externalUrl ? 'noopener noreferrer' : undefined}
                 >
-                  Read Article →
+                  Read: {post.title.slice(0, 40)}
+                  {post.title.length > 40 ? '…' : ''} →
                 </a>
               </div>
             </motion.article>

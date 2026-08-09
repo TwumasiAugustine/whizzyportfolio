@@ -45,8 +45,8 @@ export function ServicesSection({ content, compact = false }: ServicesSectionPro
     <section id="services" className="section-shell" aria-labelledby="services-title">
       <SectionTitle
         eyebrow="Services"
-        title="Software, SEO, AI & Digital Marketing"
-        blurb="From building high-performance web applications to scaling them with technical SEO, GEO, and strategic marketing."
+        title="Web Development, SEO & AI Services"
+        blurb={`Full stack development, technical SEO, and AI engineering for businesses in ${content.location.city}, ${content.location.country}, and worldwide.`}
       />
       <motion.div
         className="service-grid"
@@ -78,7 +78,7 @@ export function ServicesSection({ content, compact = false }: ServicesSectionPro
 
       {compact && (
         <p className="section-view-all">
-          <Link to="/services">View all services →</Link>
+          <Link to="/services">Explore web development, SEO & AI services →</Link>
         </p>
       )}
       

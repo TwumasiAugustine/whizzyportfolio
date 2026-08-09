@@ -34,9 +34,9 @@ export function HeroSection({ content }: HeroSectionProps) {
           transition={{ duration: 0.65 }}
         >
           <div className="avatar-ring">
-            <img 
-              src={content.profileImage} 
-              alt={`${content.personName} profile`}
+            <img
+              src={content.profileImage}
+              alt={`${content.personName}, full stack developer in ${content.location.city}, ${content.location.country}`}
               loading="eager"
               fetchPriority="high"
               width="200"
@@ -78,7 +78,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             <h1 id="hero-title">{content.heroHeadline}</h1>
             <p className="hero-subtitle">{content.heroSubheadline}</p>
             <p className="availability-dot">
-              <span /> Available for consulting
+              <span /> Based in {content.location.city}, {content.location.country} — available for remote work
             </p>
             <div className="hero-cta-group">
               <Link className="btn btn-primary" to="/contact#booking">

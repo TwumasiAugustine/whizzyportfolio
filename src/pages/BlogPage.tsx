@@ -42,6 +42,7 @@ export function BlogPage() {
             eyebrow="Blog"
             title="Technical Articles & Insights"
             blurb="Educational content on software engineering, SEO, AI development, digital marketing, and professional growth."
+            headingLevel="h1"
           />
         </section>
 
